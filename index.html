@@ -69,6 +69,64 @@ main{padding:14px 6px calc(86px + env(safe-area-inset-bottom));max-width:1100px;
 .ocs-view-opts{margin:2px 0 4px}
 .ocs-toggle{font-size:11.5px;font-weight:700;border:1.5px solid var(--line);background:#fff;color:var(--sub);border-radius:99px;padding:5px 12px;cursor:pointer;transition:all .12s}
 .ocs-toggle.on{background:var(--brand-deep);color:#fff;border-color:var(--brand-deep)}
+.ocs-legend{margin:2px 0 8px;border:1px solid var(--line);border-radius:9px;background:#F7FAF9}
+.ocs-legend>summary{cursor:pointer;font-size:11.5px;font-weight:800;color:var(--sub);padding:6px 10px;list-style:none}
+.ocs-legend>summary::-webkit-details-marker{display:none}
+.ocs-legend>summary::after{content:" ▾";opacity:.6}
+.ocs-legend[open]>summary::after{content:" ▴"}
+.ocs-legend .hint{padding:0 10px 8px;line-height:1.65}
+.otbl tr.lockrow .ocs-hi-btn{opacity:.3}
+.otbl tr.ocs-hi td{background:#FFF6D6}
+.otbl tr.ocs-hi td:nth-child(1){box-shadow:inset 3px 0 0 #F5B301}
+.hltbl{table-layout:fixed;width:100%}
+.hltbl td{padding:3px 3px;vertical-align:middle;line-height:1.25}
+.hltbl td:nth-child(1){width:36px;font-weight:800;color:var(--brand-deep);font-size:10.5px}
+.hltbl td:nth-child(2){width:34px}
+.hltbl td:nth-child(3){width:60px;line-height:1.25;overflow:hidden}
+.hltbl td:nth-child(4){overflow-wrap:anywhere;word-break:break-word;line-height:1.3}
+.hltbl td:nth-child(5){width:48px;color:var(--sub);font-size:10.5px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.hltbl tr td{background:#FFF6D6}
+.hltbl tr td:nth-child(1){box-shadow:inset 3px 0 0 #F5B301}
+/* ═══ 토탈 발견 + 노티 카드 ═══ */
+.found-card{border:1.5px solid var(--purple);background:linear-gradient(180deg,#F7F3FF,var(--purple-soft));border-radius:13px;padding:11px 12px;margin-bottom:8px}
+.found-hd{display:flex;align-items:center;gap:6px;font-size:13.5px;color:var(--purple);margin-bottom:2px}
+.found-ic{font-size:15px}
+.found-row{margin-top:8px;padding-top:7px;border-top:1px dashed #D8CCEF}
+.found-row:first-of-type{border-top:none;padding-top:0}
+.found-pt{display:flex;align-items:center;gap:5px;font-size:13px;flex-wrap:wrap}
+.found-pt .dept-tag{font-size:9.5px;padding:1px 6px;border-radius:5px;font-weight:800}
+.ptno-in{font-size:9.5px;color:var(--sub);font-weight:600;opacity:.8}
+.found-when{display:flex;align-items:center;gap:5px;flex-wrap:wrap;margin-top:4px;font-size:11.5px;padding-left:2px}
+.fw-d{font-weight:800;color:var(--brand-deep)}
+.fw-t{font-weight:800;color:var(--purple)}
+.fw-dr{color:#5b4a7a;font-weight:700}
+.fw-cat{color:var(--sub);overflow-wrap:anywhere}
+.fw-btn{background:var(--purple);color:#fff;border:none;border-radius:999px;padding:2px 10px;font-size:10.5px;font-weight:800;cursor:pointer}
+.fw-ok{color:var(--brand);font-weight:800;font-size:10.5px}
+.noti-card{border:1.5px solid #E8DFD2;background:#fff;border-radius:16px;padding:13px 14px;margin-bottom:10px;box-shadow:0 2px 10px rgba(0,0,0,.05)}
+.noti-top{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.noti-top::before{content:"";width:4px;height:19px;background:#F2704E;border-radius:2px;flex:0 0 auto}
+.noti-ic{font-size:17px;line-height:1}
+.noti-tt{font-size:17px;font-weight:800;letter-spacing:-.02em;color:var(--ink)}
+.noti-badge{background:#FDEBE4;color:#C4522F;font-size:10.5px;font-weight:800;border-radius:999px;padding:3px 11px;white-space:nowrap}
+.noti-desc{font-size:11.5px;color:var(--sub);margin:7px 0 9px}
+.noti-lines{border-top:1px solid #F0EBE3}
+.noti-line{display:flex;align-items:center;gap:6px;padding:7px 0;border-bottom:1px solid #F0EBE3}
+.nl-dep{font-size:9px;font-weight:800;padding:2px 5px;border-radius:5px;flex:0 0 auto}
+.nl-tx{flex:1;min-width:0;font-family:'D2Coding','Menlo','Consolas',monospace;font-size:10.6px;line-height:1.4;
+  letter-spacing:-.3px;color:var(--ink);background:none;padding:0;word-break:break-all;overflow-wrap:anywhere}
+.nl-cp{flex:0 0 auto;background:none;border:none;font-size:15px;cursor:pointer;padding:2px;opacity:.75}
+.nl-cp:active{opacity:1;transform:scale(.9)}
+.noti-line.nl-today .nl-tx{font-weight:700}
+.noti-all{width:100%;margin-top:11px;background:var(--brand-deep);color:#fff;border:none;border-radius:11px;
+  padding:11px;font-size:13.5px;font-weight:800;cursor:pointer;font-family:inherit}
+.noti-all:active{opacity:.85}
+.noti-me{display:flex;align-items:center;gap:7px;margin:11px 0 7px}
+.noti-me span{font-size:11px;font-weight:800;color:var(--sub);flex:0 0 auto}
+.noti-me input{flex:1;min-width:0;padding:7px 10px;border:1.5px solid var(--line);border-radius:9px;font-size:12.5px;font-family:inherit;background:#FAFBFA;box-sizing:border-box}
+.noti-hint{margin:5px 0 8px;line-height:1.55}
+.noti-card .copybox:last-of-type{margin-bottom:0}
+.ptno{display:block;font-size:8.4px;font-weight:600;color:var(--sub);opacity:.7;letter-spacing:-.3px;white-space:nowrap;line-height:1.05;margin-top:0}
 .ocs-hi-btn{border:none;background:transparent;font-size:14px;line-height:1;cursor:pointer;color:var(--line);padding:0}
 .ocs-hi-btn.on{color:#F5B301}
 tr.ocs-hi{background:#FFF6D6!important;opacity:1!important}
@@ -313,11 +371,15 @@ td.fullcell.is-holi{background:#2E3A34}
 .rtable td,.rtable th{padding:7px 6px;border-bottom:1px dashed var(--line);vertical-align:top;text-align:left;overflow-wrap:anywhere;word-break:break-word}
 .rtable td:first-child{font-weight:800;white-space:nowrap}
 /* OCS 진료행 — 과별 테이블 열폭 통일: 시간|환자|내역|주치의가 모든 과에서 같은 위치 */
-.otbl{table-layout:fixed}
-.otbl td{padding:3.5px 4px}
-.otbl td:nth-child(1){width:40px}
-.otbl td:nth-child(2){width:58px;font-weight:700;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-.otbl td:nth-child(4){width:50px;color:var(--sub);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.otbl{table-layout:fixed;width:100%}
+.otbl td{padding:3px 4px;vertical-align:middle;line-height:1.25}
+.otbl td:nth-child(1){width:38px;font-weight:800;color:var(--brand-deep);font-size:11px;white-space:nowrap}
+.otbl td:nth-child(2){width:66px;font-weight:700;overflow:hidden}
+.otbl td:nth-child(2) b,.otbl td:nth-child(2)>span:not(.ptno){display:inline-block;max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;vertical-align:bottom}
+.otbl td:nth-child(3){overflow-wrap:anywhere;word-break:break-word}
+.otbl td:nth-child(4){width:52px;color:var(--sub);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:10.5px}
+.otbl tr{border-bottom:1px solid #EDF2EF}
+.otbl tr:last-child{border-bottom:none}
 /* 📅 날짜별 세션 기록 표 */
 .sesstbl{width:100%;border-collapse:collapse;table-layout:fixed}
 .sesstbl td,.sesstbl th{padding:3px 2px;border-bottom:1px dashed var(--line);text-align:center;font-variant-numeric:tabular-nums}
@@ -423,6 +485,7 @@ break;case"<bookViews":;case"<bookViews>":;case"</bookViews>":break;case"<workbo
       <input type="text" id="quick-in" placeholder="예: 7/28 오후 교픽 · 8/15 광복절 · 8/4 1000 임플 어시" oninput="quickPreview()" onkeydown="if(event.key==='Enter')quickAdd()">
       <button class="btn" onclick="quickAdd()">추가</button>
     </div>
+    <textarea id="quick-memo" placeholder="상세 메모 (선택) — 준비물·주의사항·인계 등" rows="2" style="width:100%;margin-top:7px;padding:8px 10px;border:1px solid var(--line);border-radius:10px;font-size:13px;font-family:inherit;resize:vertical;box-sizing:border-box"></textarea>
     <div id="quick-preview"></div>
     <div id="quick-depts" style="display:flex;gap:5px;overflow-x:auto;padding:8px 0 2px;-webkit-overflow-scrolling:touch"></div>
     <p class="hint" style="margin-top:4px">교픽·마이너·외래·물치실 등은 오전/오후 <b>나절 통짜</b>로, 공휴일·메이저는 <b>하루 통짜</b>로 자동 인식돼요. <b>과가 자동으로 안 잡히거나 바꾸고 싶으면 아래 칩을 눌러 지정</b> — 안 골라도 그대로 추가돼요.</p>
@@ -536,9 +599,10 @@ break;case"<bookViews":;case"<bookViews>":;case"</bookViews>":break;case"<workbo
         </span></h2>
       <p class="hint">환자 <b>이름+번호</b>로 등록해두면 <b>새 OCS가 올 때마다 그 환자 예약을 자동으로 찾아 알려드려요</b> — 캘린더 ◇칩, 전날 노티 할 일, 당일 준비까지 자동 연결. visit 탭=날짜 기록 · 마지막 visit 후 유폴 D-7/레포트 D-14. <b>🔄 예약</b>=오늘 이후 예약 스캔 · <b>🗂 전체 이력</b>=쌓인 OCS 전체에서 이 환자 내원기록을 찾아 자동 정리. 이력마다 <b>✅봤음/✖못봄</b> 체크 — ✅는 visit에 자동 기록! <span id="tot-scan-at" style="color:var(--purple);font-weight:700"></span></p>
     </div>
+    <button class="btn" style="width:100%;margin-bottom:9px" onclick="openTotalDlg()">＋ 토탈 케이스 시작</button>
     <div id="total-ocs-found"></div>
     <div id="total-list"></div>
-    <button class="btn" style="width:100%" onclick="openTotalDlg()">＋ 토탈 케이스 시작</button>
+    <button class="btn ghost" style="width:100%" onclick="openTotalDlg()">＋ 토탈 케이스 시작</button>
   </div>
 
   <div class="osec" id="o-day">
@@ -546,7 +610,7 @@ break;case"<bookViews":;case"<bookViews>":;case"</bookViews>":break;case"<workbo
       <h2>📥 OCS 입력 <span class="badge">엑셀 파일 또는 붙여넣기</span></h2>
       <p class="hint">OCS에서 그날 예약 행들을 <b>통째로 복사</b>해 붙여넣으면 당일 뷰·토탈 자동매칭에 바로 반영돼요. 같은 날짜 재붙여넣기=새 행만 추가(중복 자동 제거) · <b>하루 지난 데이터는 내 토탈 환자 행만 남기고 자동 정리</b>.</p>
       <div class="ocs-file-box">
-        <label class="ocs-file-label" for="ocs-file">📁 OCS 엑셀 파일 올리기 <span class="badge">.xlsx · 암호 없이</span></label>
+        <label class="ocs-file-label" for="ocs-file">📁 OCS 엑셀 파일 올리기 <span class="badge">.xlsx · 🔐 암호 OK</span></label>
         <p class="hint" style="margin:4px 0 6px">OCS 예약 목록을 <b>엑셀(.xlsx)로 저장</b>한 뒤 여기서 파일만 고르면 자동 분석돼요. (암호가 걸려 있으면 엑셀에서 암호를 푼 뒤 다시 저장해 올려주세요.)</p>
         <input type="file" id="ocs-file" accept=".xlsx,.xls,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet,application/vnd.ms-excel" onchange="ocsFileRun(this)" style="width:100%;font-size:12px">
         <div id="ocs-file-status"></div>
@@ -574,6 +638,16 @@ break;case"<bookViews":;case"<bookViews>":;case"</bookViews>":break;case"<workbo
 
 <!-- ══ 가이드 (절차 체크리스트) ══ -->
 <section class="tabpage" id="page-guide">
+  <div class="card" style="border:1.5px solid var(--purple)">
+    <h2>📋 노티 양식 <span class="badge pu">탭해서 복사</span></h2>
+    <p class="hint">아래 상자를 탭하면 양식이 복사돼요 — 카톡방에 붙여넣고 내용만 채우면 끝!</p>
+    <div class="copybox" onclick="copyTx(this)"><code>@케이스장, 내원시간, 환자번호, 이름, 들어가는 원내생</code><button class="btn small ghost">복사</button></div>
+    <p class="hint">↑ 친환 노티 — 당일 <b>08:30까지</b> 과별 질문/잡담방</p>
+    <div class="copybox" onclick="copyTx(this)"><code>선생님,날짜,시간,항목(가/고/임),환자명,환자번호,번호,이름</code><button class="btn small ghost">복사</button></div>
+    <p class="hint">↑ 보철 토탈 노티 — 전날 18:00~당일 08:00 토탈방 · 2명이면 각자!</p>
+    <div class="copybox" onclick="copyTx(this)"><code>36 ○○○ 원진실환자 촬영하겠습니다</code><button class="btn small ghost">복사</button></div>
+    <p class="hint">↑ 영상 본인환자 촬영 — 잡담방</p>
+  </div>
   <div class="card"><h2>케이스별 절차 체크리스트 <span class="badge">과별 단계 가이드</span></h2>
   <p class="hint">사인·유폴 순서 복잡한 케이스를 단계별로. (체크는 저장 안 됨 — 케이스마다 새로 사용)</p>
   <p class="hint" style="margin-top:5px">처음이면 <b>⓪ 공통</b>부터! 제목 탭=단계 펼치기 · 과 칩 탭=그 과만 보기 · <span style="background:#EAF5EE;border-radius:4px;padding:0 4px">✍초록</span>=유폴·사인 단계 · <span style="background:#FBEAEA;border-radius:4px;padding:0 4px">⚠빨강</span>=실수 주의</p></div>
@@ -682,6 +756,18 @@ break;case"<bookViews":;case"<bookViews>":;case"</bookViews>":break;case"<workbo
   </div>
 </dialog>
 
+<dialog id="pw-dlg">
+  <h3 style="font-size:15px;font-weight:800;margin-bottom:5px">🔐 엑셀 암호 입력</h3>
+  <p class="hint" id="pw-hint" style="margin-bottom:9px">OCS에서 받은 암호를 입력해주세요 (보통 4자리)</p>
+  <input id="pw-in" type="password" inputmode="numeric" autocomplete="off" placeholder="예: 1234"
+    style="width:100%;padding:11px 12px;border:1.5px solid var(--line);border-radius:10px;font-size:16px;font-family:inherit;box-sizing:border-box;letter-spacing:2px"
+    onkeydown="if(event.key==='Enter'){event.preventDefault();xdPwOk();}">
+  <p class="hint" style="margin-top:7px;font-size:11px">🔒 암호는 <b>이 기기 안에서만</b> 쓰이고 어디에도 저장·전송되지 않아요.</p>
+  <div style="display:flex;gap:7px;margin-top:11px">
+    <button class="btn ghost" style="flex:1" onclick="xdPwCancel()">취소</button>
+    <button class="btn" style="flex:1.4" onclick="xdPwOk()">열기</button>
+  </div>
+</dialog>
 <dialog id="ics-dlg">
   <div class="dlg-in">
     <h3>📅 캘린더 내보내기 <span id="ics-count" style="font-size:12px;color:var(--sub);font-weight:600"></span></h3>
@@ -753,7 +839,7 @@ const BASE_SCHED={"v":2,"events":[]}; /* 공유판: 개인 일정 시드 없음 
 function txtOn(hex){try{const x=(hex||"").replace("#","");const r=parseInt(x.substr(0,2),16),g=parseInt(x.substr(2,2),16),b=parseInt(x.substr(4,2),16);return (0.299*r+0.587*g+0.114*b)/255>0.62?"#1E2823":"#fff";}catch(e){return "#fff";}}
 const DEPT_COLOR={"소치":"#EE7A1A","내과":"#C29B00","교정":"#2E9E44","치주":"#12A5B0","보존":"#3D7BE0","보철":"#23408F","외과":"#A8262A","영상":"#4F7FA8","병리":"#B0637C","원진실":"#9A5FD6","관악":"#6B2D8F","공통":"#5C6B73","기타":"#8A938D"};
 const KEY="wonnae-share-v1";
-const BUILD_ID="4";   /* 🎁 공유판(배포용) 빌드 — 새 파일마다 +1 */
+const BUILD_ID="15";   /* 🎁 공유판(배포용) 빌드 — 새 파일마다 +1 */
 function esc(s){return String(s??"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;").replace(/'/g,"&#39;");}
 /* 저장 어댑터: 클로드 앱/웹에서 열면 계정 저장소(폰·PC 자동 동기화), 
    파일을 따로 브라우저로 열면 그 기기 localStorage(비동기화)로 폴백 */
@@ -1075,9 +1161,18 @@ async function load(){
     }
   }catch(e){}},900);
   svlog("load:"+dataOrigin+" cands:"+v3cands.length);
-  /* 🆕 새 버전 감지: 부팅 3초 후 1회 + 화면 복귀 때마다 (다른 기기/내가 배포한 최신본 알림) */
-  setTimeout(()=>{try{freshCheck();}catch(e){}},3000);
-  document.addEventListener("visibilitychange",()=>{if(!document.hidden){try{freshCheck();}catch(e){}}});
+  /* ☁️ GitHub 설정 복원 — 저장된 repo·토큰을 입력칸에 채우고 상태 표시, 연결돼 있으면 자동 수신 */
+  try{
+    if(ghCfg){tcSet&&tcSet("gh-repo",ghCfg.repo||"");tcSet&&tcSet("gh-branch",ghCfg.branch||"main");tcSet&&tcSet("gh-token",ghCfg.token||"");}
+    ghStatus();
+    if(ghOn())setTimeout(()=>pullLatest("gh-boot"),900);
+  }catch(e){}
+  /* 🆕 새 버전 감지: 부팅 3초 후 + 화면 복귀 + 5분 주기 */
+  try{
+    setTimeout(()=>{try{freshCheck();}catch(e){}},3000);
+    setInterval(()=>{try{freshCheck();}catch(e){}},300000);
+    document.addEventListener("visibilitychange",()=>{if(!document.hidden){try{freshCheck();}catch(e){}}});
+  }catch(e){}
 }
 /* ═══ 저장 상태 상시 표시 + 진단 ═══ */
 /* ═══ 버전·기기 이사 도우미 — 새 HTML 버전은 저장공간이 새로 시작되므로 복사→붙여넣기가 공식 이동 경로 ═══ */
@@ -1105,6 +1200,10 @@ async function ghFetch(){
 }
 async function ghPushNow(){
   if(!ghOn()||!loadDone||!S||!Array.isArray(S.events))return false;
+  if(window.__deployBusy){                      /* 배포 중엔 데이터 push를 미룸 — 브랜치 충돌(422) 방지 */
+    try{ghSchedulePush();}catch(e){}
+    return false;
+  }
   if(dataOrigin==="fresh"&&!userTouched)return false;
   if(ghBusy)return false;ghBusy=true;
   try{
@@ -1176,27 +1275,81 @@ async function deployCommit(txt){
   const st=document.getElementById("gh-deploy-status");
   const say=s=>{if(st)st.innerHTML=s;};
   say("⏳ 배포 중…");
+  const repo=ghCfg.repo, branch=ghCfg.branch||"main";
+  const api="https://api.github.com/repos/"+repo;
+  const H=ghHdr();
+  const JH=Object.assign({"Content-Type":"application/json"},H);
+  const jf=async(u,o)=>{const r=await fetch(u,o);if(!r.ok){let d="";try{d=(await r.json()).message||"";}catch(e){}
+    const err=new Error((o&&o.method||"GET")+" "+r.status+(d?" — "+d:""));err.status=r.status;throw err;}return r.json();};
+  const wasBusy=window.__deployBusy;
+  window.__deployBusy=1;   /* 배포 동안 데이터 자동 push 잠시 멈춤 — 브랜치가 밀려 충돌하는 것 방지 */
   try{
-    let sha=null;
-    try{
-      const r0=await fetch(ghUrlPath("index.html")+"?ref="+(ghCfg.branch||"main")+"&t="+Date.now(),{headers:ghHdr(),cache:"no-store"});
-      if(r0.ok){const j=await r0.json();sha=j.sha;}
-    }catch(e){}
-    const body={message:"deploy "+new Date().toISOString().slice(5,16).replace("T"," "),content:b64e(txt),branch:ghCfg.branch||"main"};
-    if(sha)body.sha=sha;
-    let r=await fetch(ghUrlPath("index.html"),{method:"PUT",headers:Object.assign({"Content-Type":"application/json"},ghHdr()),body:JSON.stringify(body)});
-    if(r.status===409||r.status===422){
-      const r1=await fetch(ghUrlPath("index.html")+"?ref="+(ghCfg.branch||"main")+"&t="+Date.now(),{headers:ghHdr(),cache:"no-store"});
-      if(r1.ok){const j1=await r1.json();body.sha=j1.sha;
-        r=await fetch(ghUrlPath("index.html"),{method:"PUT",headers:Object.assign({"Content-Type":"application/json"},ghHdr()),body:JSON.stringify(body)});}
+    /* ── Git Data API: 파일 크기 제한 없음(≤100MB) ── */
+    say("⏳ 배포 중… (1/3 업로드)");
+    /* blob은 브랜치 상태와 무관 → 한 번만 만들면 재시도에도 재사용 */
+    const blob=await jf(api+"/git/blobs",{method:"POST",headers:JH,body:JSON.stringify({content:b64e(txt),encoding:"base64"})});
+
+    let lastErr=null;
+    for(let attempt=1;attempt<=4;attempt++){
+      /* 1) 매 시도마다 브랜치 최신 커밋을 새로 읽는다 (그 사이 동기화로 밀렸을 수 있음) */
+      let baseCommit=null, baseTree=null, emptyRepo=false;
+      try{
+        const ref=await jf(api+"/git/ref/heads/"+encodeURIComponent(branch)+"?t="+Date.now(),{headers:H,cache:"no-store"});
+        baseCommit=ref.object.sha;
+        const commitObj=await jf(api+"/git/commits/"+baseCommit+"?t="+Date.now(),{headers:H,cache:"no-store"});
+        baseTree=commitObj.tree.sha;
+      }catch(e){
+        const msg=String((e&&e.message)||e);
+        if(e.status===409||e.status===404||/empty/i.test(msg)){
+          emptyRepo=true;
+          say("⏳ 빈 저장소예요 — 첫 커밋을 만드는 중…");
+        }else throw e;
+      }
+      say(`⏳ 배포 중… (2/3 트리)${attempt>1?` · 재시도 ${attempt-1}`:""}`);
+      /* 2) 최신 트리 위에 index.html만 얹기 (다른 파일=wonnae-data.json 등은 그대로 보존) */
+      const treeBody={tree:[{path:"index.html",mode:"100644",type:"blob",sha:blob.sha}]};
+      if(baseTree)treeBody.base_tree=baseTree;
+      const tree=await jf(api+"/git/trees",{method:"POST",headers:JH,body:JSON.stringify(treeBody)});
+      /* 3) 최신 커밋을 부모로 커밋 생성 */
+      const commit=await jf(api+"/git/commits",{method:"POST",headers:JH,
+        body:JSON.stringify({message:"deploy "+new Date().toISOString().slice(5,16).replace("T"," "),tree:tree.sha,parents:baseCommit?[baseCommit]:[]})});
+      say(`⏳ 배포 중… (3/3 반영)${attempt>1?` · 재시도 ${attempt-1}`:""}`);
+      /* 4) 브랜치 이동 */
+      try{
+        if(emptyRepo){
+          await jf(api+"/git/refs",{method:"POST",headers:JH,body:JSON.stringify({ref:"refs/heads/"+branch,sha:commit.sha})});
+        }else{
+          await jf(api+"/git/refs/heads/"+encodeURIComponent(branch),{method:"PATCH",headers:JH,body:JSON.stringify({sha:commit.sha,force:false})});
+        }
+        lastErr=null;break;   /* 성공 */
+      }catch(e){
+        lastErr=e;
+        const msg=String((e&&e.message)||e);
+        /* 그 사이 브랜치가 또 밀림(동기화 등) → 최신 위로 다시 얹어 재시도 */
+        if((e.status===422||e.status===409)&&attempt<4){
+          say(`⏳ 다른 변경이 먼저 올라갔어요 — 최신 상태로 다시 시도 중… (${attempt}/3)`);
+          await new Promise(r=>setTimeout(r,700*attempt));
+          continue;
+        }
+        throw e;
+      }
     }
-    if(!r.ok)throw new Error("PUT "+r.status);
+    if(lastErr)throw lastErr;
+
     say("✅ 배포 완료 "+new Date().toTimeString().slice(0,5)+" — 반영까지 1~2분. <b>🆕 배너가 뜨면 탭</b>하면 캐시 뚫고 즉시 새 버전!");
-    toast("🚀 배포 완료! 🆕 배너를 기다려주세요");try{svlog("deploy↑");}catch(e){}
+    toast("🚀 배포 완료! 🆕 배너를 기다려주세요");svlog("deploy↑");
     let _n=0;const _tm=setInterval(async()=>{_n++;if(await freshCheck()||_n>=18)clearInterval(_tm);},15000);
   }catch(e){
-    say(`<span style="color:var(--red)">⚠ 배포 실패 — ${esc(String(e&&e.message||e))} (토큰 권한·repo 확인)</span>`);
+    const msg=String(e&&e.message||e);
+    let tip="토큰 권한·repo·브랜치 확인";
+    if(/422/.test(msg))tip="다른 기기에서 동시에 올린 게 있어요 — 잠시 뒤 한 번 더 눌러주세요";
+    else if(/401|403|Bad credentials|not accessible/i.test(msg))tip="토큰이 만료됐거나 repo 권한이 없어요 — 토큰을 다시 발급해 주세요";
+    else if(/404/.test(msg))tip="저장소 이름(아이디/저장소)이나 브랜치명을 확인해주세요";
+    say(`<span style="color:var(--red)">⚠ 배포 실패 — ${esc(msg)}<br><b>${tip}</b></span>`);
     toast("배포 실패 — 상태줄을 확인해주세요");
+  }finally{
+    window.__deployBusy=wasBusy||0;
+    if(!wasBusy)setTimeout(()=>{window.__deployBusy=0;},1200);
   }
 }
 /* ═══ 🆕 새 버전 감지: 자기 자신을 캐시 우회로 다시 읽어 BUILD_ID가 다르면 배너 ═══ */
@@ -1348,6 +1501,7 @@ async function pullLatest(reason){
   try{
     const localAt=Number(S&&S.savedAt||0);
     let remote=null;
+    let ghMerged=false;   /* 이번 pull에서 GitHub 병합을 했으면 로컬 스냅샷 재병합 스킵(구 스냅샷이 최신 클라우드를 밀어내는 것 방지) */
     const valsAll=(await Promise.all([KEY,KEY+"-snap"].map(k=>readAll(k).catch(()=>[])))).flat();
     if(ghOn()&&(reason!=="poll"||Date.now()-ghLast.pull>25000)){
       try{
@@ -1356,7 +1510,7 @@ async function pullLatest(reason){
           if(g.txt&&g.sha&&g.sha!==ghLastSha){
             const o=JSON.parse(g.txt);
             if(o&&o.events!==undefined){
-              const gsig=x=>{try{return JSON.stringify((x.events||[]).map(e=>[e.id,e.status||"",e.time||"",e.title||""]).sort())+"#"+JSON.stringify((x.totals||[]).map(t=>[t.id,(t.visits||[]).length,t.done?1:0,JSON.stringify(t.vmeta||{})]).sort())+"#"+JSON.stringify((x.mini||[]).map(d=>(d.items||[]).map(i=>i.c||0)));}catch(e){return Math.random()+"";}};
+              const gsig=x=>{try{return JSON.stringify((x.events||[]).map(e=>[e.id,e.status||"",e.time||"",e.title||"",e.span||"",e.date||"",e.memo||"",e.dept||""]).sort())+"#"+JSON.stringify((x.totals||[]).map(t=>[t.id,(t.visits||[]).length,t.done?1:0,t.next||"",t.nextT||"",t.nextHidden?1:0,JSON.stringify(t.vmeta||{})]).sort())+"#"+JSON.stringify(Object.keys(x.ocsHi||{}).sort());}catch(e){return Math.random()+"";}};
               const merged=mergeStates(o,S);
               const changedLocal=gsig(merged)!==gsig(S);
               const differsRemote=gsig(merged)!==gsig(o);
@@ -1364,6 +1518,7 @@ async function pullLatest(reason){
               if(!S.mini)S.mini=defaultMini();
               S.totals=S.totals||[];S.events=S.events||[];S.routine=S.routine||{};S.roadmap=S.roadmap||{};S.protoDone=S.protoDone||{};S.ocsHi=S.ocsHi||{};
               ghLastSha=g.sha;
+              ghMerged=true;
               if(dataOrigin==="fresh")dataOrigin="stored";   /* 클라우드 수신 = 실데이터 보유 */
               if(changedLocal){renderAll();_qRestore();updateSvDot&&updateSvDot();toast("☁️ 다른 기기와 동기화했어요");}
               if(differsRemote){S.savedAt=Date.now();await flushSave();}   /* 병합본을 GitHub에도 전파 */
@@ -1374,7 +1529,7 @@ async function pullLatest(reason){
         }
       }catch(e){}
     }
-        {
+    if(!ghMerged){
       for(const v of valsAll){try{const o=JSON.parse(v);
         if(o&&o.events!==undefined){const at=Number(o.savedAt||0);
           if(at<=Date.now()+172800000&&(!remote||at>Number(remote.savedAt||0)))remote=o;}
@@ -1731,9 +1886,12 @@ function quickAdd(){
   if(!p||!p.title||p.title==="(내용 없음)"){toast("내용을 입력해주세요");return;}
   if(quickDeptOverride)p.dept=quickDeptOverride;
   if(p.dept==="기타"&&/^(픽|픽스|스|환|신|신환|재시|어시)$/.test(p.title.trim())){toast("내용이 너무 짧아요 — 과·케이스를 함께 적어주세요");return;}
-  S.events.push({id:Date.now()+Math.random(),status:"plan",kind:guessKind(p.dept,p.title),memo:"",manual:true,u:Date.now(),...p});
+  const memoEl=document.getElementById("quick-memo");
+  const memo=memoEl?memoEl.value.trim():"";
+  S.events.push({id:Date.now()+Math.random(),status:"plan",kind:guessKind(p.dept,p.title),memo:memo,manual:true,u:Date.now(),...p});
   selDate=p.date;calYM={y:+p.date.slice(0,4),m:+p.date.slice(5,7)-1};
   document.getElementById("quick-in").value="";document.getElementById("quick-preview").textContent="";
+  if(memoEl)memoEl.value="";
   quickDeptOverride=null;renderQuickDepts();
   save();refreshAfterEventChange();
   toast(`추가됨: [${p.dept}] ${esc(p.title)}`);
@@ -1808,7 +1966,7 @@ function markNextScheduled(tid){const t=findT(tid);if(!t||!t.next)return;
   const when=`${fmtD(t.next)}${t.nextT?" "+t.nextT:""}`;
   askConfirm(`${esc(t.pt)}의 예상(${esc(when)})을 달력에서만 숨길까요?\n이미 일정표에 직접 넣어두셨을 때 사용하세요 — 다음 내원일 기록(${esc(when)})은 그대로 남고, 달력의 예상 점선만 사라져요.`,()=>{
     t.nextHidden=true;t.nextU=Date.now();      /* ★next는 보존 · 달력 점선만 숨김 */
-    save();refreshAfterEventChange();syncTotals();
+    save(true);refreshAfterEventChange();syncTotals();
     toast(`🗓️ 달력 예상 표시만 숨겼어요 — 다음 내원일(${when})은 토탈에 그대로 있어요`);
   },"달력에서 숨기기");}
 function confirmNextEvent(tid){const t=findT(tid);if(!t||!t.next)return;
@@ -1825,8 +1983,9 @@ function confirmNextEvent(tid){const t=findT(tid);if(!t||!t.next)return;
     S.events.push({id:Date.now(),date:t.next,dept:t.dept,title,time:t.nextT||null,dur:60,
       memo:pinfo,status:"plan",kind:"etc",span:null,manual:true,u:Date.now()});
   }
-  t.next="";t.nextT="";t.nextU=Date.now();
-  save();renderCalendar();renderDayDetail();syncTotals();
+  /* ★확정해도 다음 내원일은 토탈에 그대로 보존 — 달력엔 실 일정이 떴으니 예상 점선만 숨김(nextHidden) */
+  t.nextHidden=true;t.nextU=Date.now();
+  save(true);refreshAfterEventChange();syncTotals();
   toast(`✔ 확정: ${title}${twin?" — 기존 일정 메모에 환자 추가":" — 일정으로 옮겼어요 (메모에 환자정보)"}`);}
 function nextVirts(ds){return (S.totals||[]).filter(t=>!t.done&&!t.nextHidden&&t.next===ds);}
 function normTime(s){s=String(s||"").trim();if(!s)return"";
@@ -1841,7 +2000,12 @@ function normTime(s){s=String(s||"").trim();if(!s)return"";
 /* 🏅 전공의 티어표 렌더 — 여러 후기 통합. 티어색: SS금·S초록·A/B회색·⚠빨강 */
 function totalTitle(t){const hm=t.nextT?t.nextT.replace(":","")+" ":"";const who=(t.dr&&t.dr.trim())?t.dr.trim():t.dept;return hm+who+" "+(t.item||"토탈");}
 function virtChipHtml(t){const c=DEPT_COLOR[t.dept]||"#666";
-  return `<span class="chip${t.nextT?"":" untimed"}" style="background:#fff;border:1.6px dashed ${c};color:${c};opacity:.92" title="[예상] ${esc(totalTitle(t))} — ${esc(t.ptno||"")} ${esc(t.pt)}" onclick="event.stopPropagation();dayTap('${t.next}')">${esc(totalTitle(t))}</span>`;}
+  /* 예상 칩: 담당쌤 + 항목으로 한눈에, 시간이 있으면 굵게 앞세움 */
+  const who=(t.dr&&t.dr.trim())?t.dr.trim():t.dept;
+  const label=`${who} ${t.item||"토탈"}`;
+  const tm=t.nextT?`<span class="tm2" style="opacity:1;font-weight:900;color:${c}">${t.nextT.replace(":","")}</span> `:"";
+  const un=t.nextT?"":" untimed";
+  return `<span class="chip${un}" style="background:${c}0D;border:1.6px dashed ${c};color:${c};opacity:.95" title="[예상] ${esc(totalTitle(t))} — ${esc(t.ptno||"")} ${esc(t.pt)}" onclick="event.stopPropagation();dayTap('${t.next}')">${tm}${esc(label)}</span>`;}
 function openChip(id){const e=S.events.find(x=>String(x.id)===String(id));if(!e)return;selDate=e.date;renderCalendar();renderDayDetail();
   document.getElementById("day-detail").scrollIntoView({behavior:"smooth",block:"start"});}
 /* 📱 달력 탭 엔진 — iOS가 가로스크롤 표 안의 탭을 스크롤로 오판해 click을 삼키는 문제를
@@ -1997,7 +2161,16 @@ function renderCalendar(){
       const evs=evOn(ds).sort((a,b)=>evSortKey(a)-evSortKey(b));
       const fulls=evs.filter(e=>e.span==="full");
       const rest=evs.filter(e=>e.span!=="full");
-      const ups=upOn(ds).filter(u=>MS.has(u)&&!evs.some(e=>e.title.includes(u.pt))&&(!calDeptFilter||calDeptFilter.size===0||calDeptFilter.has(u.dep)));
+      const ups=upOn(ds).filter(u=>{
+        if(!MS.has(u))return false;
+        if(calDeptFilter&&calDeptFilter.size>0&&!calDeptFilter.has(u.dep))return false;
+        const uno=String(u.no||"").replace(/\D/g,"").replace(/^0+/,"");
+        /* 이미 실제 일정에 이 환자가 잡혀 있으면(제목·메모에 이름 또는 번호) 유령칩 제외 */
+        if(evs.some(e=>(e.title&&e.title.includes(u.pt))||(e.memo&&(e.memo.includes(u.pt)||(uno&&e.memo.replace(/\D/g,"").includes(uno))))))return false;
+        /* 이미 예상(다음 내원일) 점선칩이 이 환자로 떠 있으면 유령칩 제외 (중복 방지) */
+        if(nextVirts(ds).some(t=>{const tno=String(t.ptno||"").replace(/\D/g,"").replace(/^0+/,"");return t.pt===u.pt||(tno&&uno&&tno===uno);}))return false;
+        return true;
+      });
       const am=rest.filter(e=>e.span==="am"||(!e.span&&(!e.time||hm2min(e.time)<720)));
       const pm=rest.filter(e=>e.span==="pm"||(!e.span&&e.time&&hm2min(e.time)>=720));
       const amU=ups.filter(u=>!u.t||hm2min(u.t)<720), pmU=ups.filter(u=>u.t&&hm2min(u.t)>=720);
@@ -2285,11 +2458,13 @@ function exportICS(scope){
     evs=S.events.filter(e=>e.status!=="cancel"&&(scope==="all"||e.date.startsWith(ym))).concat(_virtEvs());
     if(!evs.length){toast("내보낼 일정 없음");return;}
   }
-  let ics="BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//wonnae//KR\r\nCALSCALE:GREGORIAN\r\n";
+  let ics="BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//wonnae//dashboard//KR\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\n";
+  /* iOS 캘린더가 로컬시각을 정확히 잡도록 서울 타임존 정의 (KST 고정, DST 없음) */
+  ics+="BEGIN:VTIMEZONE\r\nTZID:Asia/Seoul\r\nBEGIN:STANDARD\r\nDTSTART:19700101T000000\r\nTZOFFSETFROM:+0900\r\nTZOFFSETTO:+0900\r\nTZNAME:KST\r\nEND:STANDARD\r\nEND:VTIMEZONE\r\n";
   const stamp=new Date().toISOString().replace(/[-:]/g,"").slice(0,15)+"Z";
   evs.forEach(e=>{
     const d=e.date.replace(/-/g,"");
-    ics+="BEGIN:VEVENT\r\nUID:"+e.id+"@wonnae\r\nDTSTAMP:"+stamp+"\r\n";
+    ics+="BEGIN:VEVENT\r\nUID:"+(e._virt?"v":"e")+String(e.id)+"-"+e.date.replace(/-/g,"")+"@wonnae\r\nDTSTAMP:"+stamp+"\r\n";
     const isHoli=/공휴일|절$|성탄|신정|설날|추석|어린이날|부처님|현충일|개천절|한글날/.test(e.title);
     let startM=null,endM=null,allDay=false;
     if(e.span==="full"){ if(isHoli)allDay=true; else{startM=540;endM=1020;} } /* 하루종일 진료 09~17 */
@@ -2302,7 +2477,7 @@ function exportICS(scope){
       ics+=`DTSTART;VALUE=DATE:${d}\r\nDTEND;VALUE=DATE:${ymd(nd).replace(/-/g,"")}\r\n`;
     }else{
       const fmt=m=>String(Math.floor(m/60)).padStart(2,"0")+String(m%60).padStart(2,"0")+"00";
-      ics+=`DTSTART:${d}T${fmt(startM)}\r\nDTEND:${d}T${fmt(endM)}\r\n`;
+      ics+=`DTSTART;TZID=Asia/Seoul:${d}T${fmt(startM)}\r\nDTEND;TZID=Asia/Seoul:${d}T${fmt(endM)}\r\n`;
     }
     /* 제목: 앞에 쓴 시간 그대로 유지 (예: 1400 소치 토탈) */
     const tpref=e.time?e.time.replace(":","")+" ":"";
@@ -2311,26 +2486,39 @@ function exportICS(scope){
     ics+="END:VEVENT\r\n";
   });
   ics+="END:VCALENDAR\r\n";
+  /* RFC5545 라인 폴딩 — 75옥텟(UTF-8 바이트) 초과 줄은 접어야 iOS 파서가 안전하게 읽음 */
+  ics=ics.split("\r\n").map(line=>{
+    if(new Blob([line]).size<=74)return line;
+    let out="",cur="",bytes=0;
+    for(const ch of line){
+      const b=new Blob([ch]).size;
+      if(bytes+b>73){out+=(out?"\r\n ":"")+cur;cur=ch;bytes=b;}
+      else{cur+=ch;bytes+=b;}
+    }
+    out+=(out?"\r\n ":"")+cur;return out;
+  }).join("\r\n");
   /* 저장(조용히) + 다운로드 다이얼로그 */
   S.lastExport=Date.now();save();
   const fname=`원내생일정_${scope==="all"?"전체":scope==="delta"?"변경분":scope==="future"?ym+"부터":ym}.ics`;
-  /* base64 데이터 URI (UTF-8 안전) — 모바일에서 캘린더 앱으로 바로 열림 */
+  /* iOS Safari는 data: URI를 새 탭으로 열면 빈 창에서 멈춤 → Blob URL(파일 취급)로 다운로드해야 캘린더 앱으로 넘어감 */
+  let blobUrl="";
+  try{
+    const blob=new Blob([ics],{type:"text/calendar;charset=utf-8"});
+    if(window._icsBlobUrl)URL.revokeObjectURL(window._icsBlobUrl);
+    window._icsBlobUrl=blobUrl=URL.createObjectURL(blob);
+  }catch(e){}
   let dataUri;
   try{ dataUri="data:text/calendar;charset=utf-8;base64,"+btoa(unescape(encodeURIComponent(ics))); }
   catch(e){ dataUri="data:text/calendar;charset=utf-8,"+encodeURIComponent(ics); }
-  const openLink=document.getElementById("ics-open");
-  openLink.href=dataUri;
+  window._icsFname=fname; window._icsData=ics; window._icsUri=blobUrl||dataUri;
+  /* 다운로드 버튼(a) 모두 Blob URL + download 로 통일 (PC·모바일 공통) */
   const dl=document.getElementById("ics-dl");
-  try{
-    const blob=new Blob([ics],{type:"text/calendar;charset=utf-8"});
-    if(dl._url)URL.revokeObjectURL(dl._url);
-    dl._url=URL.createObjectURL(blob);
-    dl.href=dl._url;dl.download=fname;
-  }catch(e){ dl.href=dataUri;dl.download=fname; }
+  dl.href=blobUrl||dataUri;dl.download=fname;
+  const openLink=document.getElementById("ics-open");
+  openLink.href=blobUrl||dataUri;openLink.download=fname;openLink.removeAttribute("target");
   document.getElementById("ics-text").value=ics;
   document.getElementById("ics-count").textContent=`(${evs.length}건)`;
   window._lastICS=ics;
-  window._icsFname=fname;window._icsData=ics;window._icsUri=(dl&&dl._url)||dataUri;
   document.getElementById("ics-dlg").showModal();
 }
 /* 📲 .ics 파일 공유 — iOS는 Web Share가 캘린더 앱 인식에 가장 안정적 */
@@ -2636,7 +2824,7 @@ function saveTotal(){
   {const _n=val("tc-next"),_t=normTime(val("tc-nextT"));if(_n!==(t.next||"")||_t!==(t.nextT||""))t.nextU=Date.now();t.next=_n;t.nextT=_t;}
   if(!t.pt){toast("환자명 입력");return;}
   if(!ed)S.totals.push(t);
-  save();document.getElementById("total-dlg").close();window.tcEditId=null;
+  save(true);document.getElementById("total-dlg").close();window.tcEditId=null;
   ["tc-item","tc-pt","tc-ptno","tc-dr","tc-next","tc-nextT"].forEach(i=>document.getElementById(i).value="");
   syncTotals();
   if(ed){toast("✏️ 수정 완료");return;}
@@ -2667,6 +2855,7 @@ function clearTcDept(){tcDeptFilter=null;renderTotals();}
 let tcSortMode="deadline";   /* deadline=임박순 · item=항목별 */
 let tcItemFilter=null;       /* null=전체 · 선택된 항목명 */
 function setTcSort(m){tcSortMode=m;renderTotals();}
+function toggleTcShowDone(){window.tcShowDone=!window.tcShowDone;renderTotals();}
 function setTcItem(it){tcItemFilter=(tcItemFilter===it)?null:it;renderTotals();}
 /* 남은 일수(작을수록 급함): 유폴/레포트 마감 우선 → 다음 내원 → 없으면 맨 뒤 */
 function tcUrgency(t){
@@ -2691,45 +2880,59 @@ function renderTotals(){
   /* 서브탭: 전체/과별 + 완료 보기 토글 */
   const deps=tcDeptList();
   const doneN=S.totals.filter(t=>t.done).length;
+  /* 과 필터 후보 집합 (항목 세부탭·정렬에 쓰임) */
+  let scoped=(!tcDeptFilter||tcDeptFilter.size===0)?S.totals.slice():S.totals.filter(t=>tcDeptFilter.has(t.dept));
+  /* 현재 스코프의 항목(item) 목록 */
+  const itemList=[...new Set(scoped.map(t=>(t.item||"").trim()).filter(Boolean))];
+  if(tcItemFilter&&!itemList.includes(tcItemFilter))tcItemFilter=null;
   let filterHtml="";
   {
     const active=tcDeptFilter&&tcDeptFilter.size>0;
-    filterHtml=`<div style="display:flex;gap:4px;flex-wrap:wrap;align-items:center;margin:0 0 10px">
+    filterHtml=`<div style="display:flex;gap:4px;flex-wrap:wrap;align-items:center;margin:0 0 7px">
       <button onclick="clearTcDept()" style="border:1.5px solid ${active?"var(--line)":"var(--brand)"};background:${active?"transparent":"var(--brand)"};color:${active?"var(--sub)":"#fff"};border-radius:999px;padding:2px 11px;font-size:11px;font-weight:800;cursor:pointer">전체 ${S.totals.length}</button>
       ${deps.map(dep=>{const on=active&&tcDeptFilter.has(dep);const col=DEPT_COLOR[dep]||"#666";const n=S.totals.filter(t=>t.dept===dep).length;
         return `<button onclick="toggleTcDept('${dep}')" style="border:1.5px solid ${col};background:${on?col:col+"14"};color:${on?"#fff":col};border-radius:999px;padding:2px 11px;font-size:11px;font-weight:800;cursor:pointer">${dep} ${n}</button>`;}).join("")}
-      ${doneN?`<button onclick="tcShowDone=!tcShowDone;renderTotals()" style="margin-left:auto;border:1.5px solid var(--line);background:${window.tcShowDone?"var(--ink)":"transparent"};color:${window.tcShowDone?"#fff":"var(--sub)"};border-radius:999px;padding:2px 11px;font-size:10.5px;font-weight:700;cursor:pointer">✅완료 ${doneN} ${window.tcShowDone?"숨기기":"보기"}</button>`:""}
+      ${doneN?`<button onclick="toggleTcShowDone()" style="margin-left:auto;border:1.5px solid var(--line);background:${window.tcShowDone?"var(--ink)":"transparent"};color:${window.tcShowDone?"#fff":"var(--sub)"};border-radius:999px;padding:2px 11px;font-size:10.5px;font-weight:700;cursor:pointer">✅완료 ${doneN} ${window.tcShowDone?"숨기기":"보기"}</button>`:""}
     </div>`;
-  }
-  /* 항목(item) 목록 — 현재 과 필터 범위 기준 */
-  const scoped=(!tcDeptFilter||tcDeptFilter.size===0)?S.totals.slice():S.totals.filter(t=>tcDeptFilter.has(t.dept));
-  const itemList=[...new Set(scoped.filter(t=>!t.done).map(t=>(t.item||"").trim()).filter(Boolean))].sort();
-  if(tcItemFilter&&!itemList.includes(tcItemFilter))tcItemFilter=null;
-  let sortHtml="";
-  if(scoped.filter(t=>!t.done).length>1){
-    sortHtml=`<div style="display:flex;gap:5px;flex-wrap:wrap;align-items:center;margin:-4px 0 9px">
+    /* 항목별 세부탭 (현재 과 스코프에 항목이 2개 이상일 때만) */
+    if(itemList.length>1){
+      filterHtml+=`<div style="display:flex;gap:4px;flex-wrap:wrap;align-items:center;margin:0 0 7px;padding-left:2px">
+        <span style="font-size:10px;color:var(--sub);font-weight:700;flex:0 0 auto">항목</span>
+        <button onclick="setTcItem(null)" style="border:1px solid ${tcItemFilter?"var(--line)":"var(--ink)"};background:${tcItemFilter?"transparent":"var(--ink)"};color:${tcItemFilter?"var(--sub)":"#fff"};border-radius:999px;padding:1px 9px;font-size:10px;font-weight:700;cursor:pointer">전체</button>
+        ${itemList.map(it=>{const on=tcItemFilter===it;const n=scoped.filter(t=>(t.item||"").trim()===it).length;
+          return `<button onclick="setTcItem('${esc(it).replace(/'/g,"")}')" style="border:1px solid ${on?"var(--ink)":"var(--line)"};background:${on?"var(--ink)":"transparent"};color:${on?"#fff":"var(--sub)"};border-radius:999px;padding:1px 9px;font-size:10px;font-weight:700;cursor:pointer">${esc(it)} ${n}</button>`;}).join("")}
+      </div>`;
+    }
+    /* 정렬 선택 (임박순 / 항목별) */
+    filterHtml+=`<div style="display:flex;gap:5px;align-items:center;margin:0 0 10px;padding-left:2px">
+      <span style="font-size:10px;color:var(--sub);font-weight:700">정렬</span>
       <button onclick="setTcSort('deadline')" style="border:1.5px solid ${tcSortMode==="deadline"?"var(--brand)":"var(--line)"};background:${tcSortMode==="deadline"?"var(--brand)":"transparent"};color:${tcSortMode==="deadline"?"#fff":"var(--sub)"};border-radius:999px;padding:2px 11px;font-size:10.5px;font-weight:800;cursor:pointer">⏰ 임박순</button>
       <button onclick="setTcSort('item')" style="border:1.5px solid ${tcSortMode==="item"?"var(--brand)":"var(--line)"};background:${tcSortMode==="item"?"var(--brand)":"transparent"};color:${tcSortMode==="item"?"#fff":"var(--sub)"};border-radius:999px;padding:2px 11px;font-size:10.5px;font-weight:800;cursor:pointer">🗂 항목별</button>
-      ${itemList.length>1?`<span style="width:100%;height:0"></span><button onclick="setTcItem(null)" style="border:1px solid ${tcItemFilter?"var(--line)":"var(--ink)"};background:${tcItemFilter?"transparent":"var(--ink)"};color:${tcItemFilter?"var(--sub)":"#fff"};border-radius:999px;padding:1px 9px;font-size:10px;font-weight:700;cursor:pointer">전체</button>
-      ${itemList.map(it=>{const on=tcItemFilter===it;const n=scoped.filter(t=>!t.done&&(t.item||"").trim()===it).length;
-        return `<button onclick="setTcItem('${esc(it).replace(/'/g,"")}')" style="border:1px solid ${on?"var(--ink)":"var(--line)"};background:${on?"var(--ink)":"transparent"};color:${on?"#fff":"var(--sub)"};border-radius:999px;padding:1px 9px;font-size:10px;font-weight:700;cursor:pointer">${esc(it)} ${n}</button>`;}).join("")}`:""}
     </div>`;
   }
-  filterHtml+=sortHtml;
   let shown=scoped;
-  if(tcItemFilter)shown=shown.filter(t=>(t.item||"").trim()===tcItemFilter||t.done);
+  if(tcItemFilter)shown=shown.filter(t=>(t.item||"").trim()===tcItemFilter);
   if(!window.tcShowDone)shown=shown.filter(t=>!t.done);
-  /* 정렬: 완료는 항상 뒤 · 임박순=남은일수 · 항목별=항목명→임박순 */
+  /* 정렬: 완료는 항상 뒤로, 그 안에서 임박순 또는 항목별 */
   shown=shown.slice().sort((a,b)=>{
-    if((a.done?1:0)!==(b.done?1:0))return (a.done?1:0)-(b.done?1:0);
+    const ad=a.done?1:0,bd=b.done?1:0;if(ad!==bd)return ad-bd;   /* 미완료 먼저 */
     if(tcSortMode==="item"){
-      const ia=(a.item||"").trim(),ib=(b.item||"").trim();
-      if(ia!==ib)return ia<ib?-1:1;
+      const ai=(a.item||"").trim(),bi=(b.item||"").trim();
+      if(ai!==bi)return ai<bi?-1:1;
+      return tcUrgency(a)-tcUrgency(b);   /* 같은 항목이면 임박순 */
     }
-    return tcUrgency(a)-tcUrgency(b);
+    return tcUrgency(a)-tcUrgency(b);     /* 임박순 */
   });
   if(!shown.length){box.innerHTML=filterHtml+`<div class="card"><div class="empty">${tcItemFilter?"이 항목의 토탈이 없어요":"선택한 과의 토탈이 없어요"}</div></div>`;return;}
+  let _prevItem=null;
   box.innerHTML=filterHtml+shown.map(t=>{
+    /* 항목별 정렬일 때 항목이 바뀌는 지점에 그룹 헤더 */
+    let _grpHdr="";
+    if(tcSortMode==="item"&&!tcItemFilter&&!t.done){
+      const it=(t.item||"기타").trim()||"기타";
+      if(it!==_prevItem){_prevItem=it;const col=DEPT_COLOR[t.dept]||"#666";
+        _grpHdr=`<div style="font-size:12px;font-weight:800;color:${col};margin:12px 2px 5px;padding-bottom:3px;border-bottom:2px solid ${col}33">🗂 ${esc(it)}</div>`;}
+    }
     const um=upMatch(t);const up0=um[0];
     const lastV=t.visits.length?t.visits[t.visits.length-1]:null;
     const vs=t.visits.filter(Boolean).slice().sort();
@@ -2761,7 +2964,7 @@ function renderTotals(){
         dl=`<div class="deadline ${nl<=1?"warn":"ok"}">다음 내원 ${fmtD(nx)}${nxT?` <b>${nxT}</b>`:""} (${nl===0?"오늘!":"D-"+nl})${nl===1?" · 오늘 노티!":""}${src==="OCS"?' <span style="font-weight:700;opacity:.75">· OCS</span>':""}</div>`;
       }
     }
-    return `<div class="tc">
+    return _grpHdr+`<div class="tc">
       <div class="top"><span class="dept-tag${txtOn(DEPT_COLOR[t.dept])==="#fff"?"":" lt"}" style="background:${DEPT_COLOR[t.dept]};color:${txtOn(DEPT_COLOR[t.dept])}">${t.dept}</span><span class="pt">${esc(t.pt)}</span>${t.ptno?`<span style="font-size:10.5px;color:var(--sub);font-weight:700">#${esc(t.ptno)}</span>`:""}${t.scope==="all"?`<span class="badge" style="font-size:9.5px;background:#EDE4F7;color:#6A3FA0">타과도 알림</span>`:""}<span style="margin-left:auto">${t.done?"✅":""}</span></div>
       <div class="meta">${esc(t.item||"")} · ${esc(t.dr||"담당쌤?")}${tagSum?` · <span style="color:${dcol};font-weight:800">${esc(tagSum)}</span>`:""}</div>
       ${um.map(u=>`<div class="deadline" style="border:1.5px dashed var(--purple);background:var(--purple-soft);color:var(--purple)">◇ OCS: ${fmtD(u.d)} ${u.t||""}${t.scope==="all"&&u.dep&&u.dep!==t.dept?` <span class="dept-tag" style="background:${DEPT_COLOR[u.dep]||"#666"};color:${txtOn(DEPT_COLOR[u.dep]||"#666")};font-size:9.5px">${u.dep}</span>`:""} ${esc(u.dr||"")}${u.cat?` · ${esc(u.cat)}`:""}${t.next!==u.d?` <button class="btn small" style="margin-left:6px;background:var(--purple);color:#fff" onclick="setNextFromUp(${t.id},'${u.d}','${u.t||""}','${(u.dr||"").replace(/'/g,"")}','${u.no||""}')">이 날짜로 반영</button>`:" · 반영됨 ✓"}</div>`).join("")}
@@ -2799,8 +3002,8 @@ function toggleVisit(id,i){
   }else{
     askDate(`${esc(t.pt)} — ${i+1}번째 visit 날짜`,ymd(new Date()),d=>{
       t.visits[i]=d;t.visits=t.visits.filter(Boolean).sort();
-      if(t.next===d){t.next="";t.nextT="";t.nextU=Date.now();}   /* 다녀온 날짜는 해제 */
-      if(t.visits.length>=t.need){t.next="";t.nextT="";t.nextU=Date.now();}
+      if(t.next===d){t.next="";t.nextT="";t.nextHidden=false;t.nextU=Date.now();}   /* 다녀온 날짜는 해제 */
+      if(t.visits.length>=t.need){t.next="";t.nextT="";t.nextHidden=false;t.nextU=Date.now();}
       save();syncTotals();toast(`${i+1}번째 visit 기록됨`);
       if((TOTAL_CFG[t.dept]||{}).tags)openVisitDlg(id,d);   /* 바로 항목 체크 */});
   }
@@ -2812,7 +3015,7 @@ function setNext(id){const t=findT(id);
     {label:"⏰ 시간 (선택 · 비우면 미정 · 달력에 ⏳점선으로 떠요)",type:"time",val:t.nextT||""}
   ],vals=>{
     if(!vals[0]){toast("날짜를 선택하세요");return;}
-    t.next=vals[0];t.nextT=vals[1]||"";t.nextU=Date.now();t.nextHidden=false;save();syncTotals();tick&&(lastMin=null);
+    t.next=vals[0];t.nextT=vals[1]||"";t.nextU=Date.now();t.nextHidden=false;save(true);syncTotals();tick&&(lastMin=null);
     toast(`${esc(t.pt)} 다음 내원 ${fmtD(t.next)}${t.nextT?" "+t.nextT:""} 반영`);
   });}
 function tgl(id,k){const t=findT(id);t[k]=!t[k];save();syncTotals();}
@@ -2829,11 +3032,34 @@ let ocsHideLocked=false; /* true=교수님·회색(🔒) 행 숨김 (뷰 옵션)
 function ocsDeptPick(dep){ocsDeptFilter=(ocsDeptFilter===dep?null:dep);renderOcsDay();}
 function ocsToggleLocked(){ocsHideLocked=!ocsHideLocked;renderOcsDay();}
 function ocsHiKey(u){return (u.d||"")+"|"+(u.t||"")+"|"+(u.no||"")+"|"+(u.dep||"");}
-function ocsHiToggle(key){S.ocsHi=S.ocsHi||{};if(S.ocsHi[key])delete S.ocsHi[key];else S.ocsHi[key]=1;save(1);
-  /* 열린 서브탭 기준으로 갱신 — 하이라이트 탭에서 해제하면 목록에서 바로 빠지게 */
-  try{const pill=document.querySelector("#ocs-pills button.on");const o=pill?pill.dataset.o:"day";
-    if(o==="hl")renderOcsHl();else renderOcsDay();
-  }catch(e){try{renderOcsDay();}catch(_){}}}
+function ocsHiToggle(key){
+  S.ocsHi=S.ocsHi||{};
+  const on=!S.ocsHi[key];
+  if(on)S.ocsHi[key]=1;else delete S.ocsHi[key];
+  save(1);
+  /* 하이라이트 탭이 열려 있으면 목록 자체가 바뀌므로 그때만 전체 갱신 */
+  try{const pill=document.querySelector("#ocs-pills button.on");
+    if(pill&&pill.dataset.o==="hl"){renderOcsHl();return;}
+  }catch(e){}
+  /* 당일 뷰에서는 재렌더 없이 그 줄만 즉시 칠하기 — 펼쳐둔 과 패널이 닫히지 않도록 */
+  let touched=false;
+  try{
+    const sel='button[data-k="'+((window.CSS&&CSS.escape)?CSS.escape(key):key)+'"]';
+    document.querySelectorAll(sel).forEach(btn=>{
+      touched=true;
+      btn.classList.toggle("on",on);
+      const tr=btn.closest("tr");
+      if(tr){
+        tr.classList.toggle("ocs-hi",on);
+        /* border-collapse에서 tr 배경이 무시될 수 있어 각 td에도 직접 지정 */
+        const HL="#FFF6D6";
+        tr.querySelectorAll("td").forEach(td=>{td.style.background=on?HL:"";});
+        if(on)tr.style.opacity="1";else tr.style.opacity="";
+      }
+    });
+  }catch(e){}
+  if(!touched){try{renderOcsDay();}catch(e){}}
+}
 function ocsMove(d){const b=ocsDate?new Date(ocsDate+"T00:00"):new Date();b.setDate(b.getDate()+d);ocsDate=ymd(b);renderOcs();}
 function ocsReset(){ocsDate=null;renderOcs();}
 const WALKIN_DEPTS=["소치","보존","치주","보철","내과","외과","교정"];
@@ -3374,15 +3600,15 @@ function renderOcsHl(){
     const L=byD[d].sort((a,b)=>(a.t||"")<(b.t||"")?-1:1);
     const lbl=d===today?"오늘":fmtD(d);
     return `<details open style="margin-top:8px"><summary style="font-size:12.5px;font-weight:800;cursor:pointer">${lbl} <b style="color:var(--brand)">${L.length}건</b></summary>
-    <table class="rtable otbl" style="font-size:11.5px;margin-top:4px">${L.map(u=>{
+    <table class="rtable hltbl" style="font-size:11.5px;margin-top:4px">${L.map(u=>{
       const k=ocsHiKey(u);const mine=MS.has(k);
       const col=DEPT_COLOR[u.dep]||"#666";
       return `<tr class="ocs-hi"><td style="white-space:nowrap">${u.t||"?"}</td>
       <td><span class="dept-tag" style="background:${col};color:${txtOn(col)};font-size:9.5px">${esc(u.dep||"")}</span></td>
-      <td><b>${esc(u.pt||"")}</b>${mine?" <b style='color:var(--purple)'>◇</b>":""}</td>
+      <td><b>${esc(u.pt||"")}</b>${mine?" <b style='color:var(--purple)'>◇</b>":""}<span class="ptno">${esc(u.no||"")}</span></td>
       <td>${u._gone?'<span style="color:var(--sub)">— 원본 정리됨</span>':esc(u.cat||"—")}</td>
       <td style="color:var(--sub)">${esc(u.dr||"")}</td>
-      <td style="padding:1px 2px;width:22px"><button class="ocs-hi-btn on" onclick="ocsHiToggle('${k.replace(/'/g,"\\'")}')" title="하이라이트 해제">🖍️</button></td></tr>`;
+      <td style="padding:1px 2px;width:22px"><button class="ocs-hi-btn on" data-k="${esc(k)}" onclick="ocsHiToggle('${k.replace(/'/g,"\\'")}')" title="하이라이트 해제">🖍️</button></td></tr>`;
     }).join("")}</table></details>`;
   }).join("");
 }
@@ -3427,13 +3653,17 @@ function renderOcsDay(){
       return `<button class="ocs-chip${on?" on":""}" style="${on?`background:${col};color:${txtOn(col)};border-color:${col}`:`color:${col};border-color:${col}`}" onclick="ocsDeptPick('${dp}')">${dp} ${cnt}</button>`;};
     const chips=`<button class="ocs-chip${ocsDeptFilter?"":" on"}" style="${ocsDeptFilter?"":"background:var(--brand);color:#fff;border-color:var(--brand)"}" onclick="ocsDeptPick(null)">전체 ${raw.length}</button>`+allDeps.map(chip).join("");
     const row=u=>{const acc=accessOf(u);const mine=MSg.has(u);const hk=ocsHiKey(u);const hi=!!(S.ocsHi&&S.ocsHi[hk]);
-      const hiBtn=`<button class="ocs-hi-btn${hi?" on":""}" onclick="ocsHiToggle('${hk.replace(/'/g,"\\'")}')" title="이 줄 하이라이트">🖍️</button>`;
+      const hiBtn=`<button class="ocs-hi-btn${hi?" on":""}" data-k="${esc(hk)}" onclick="ocsHiToggle('${hk.replace(/'/g,"\\'")}')" title="이 줄 하이라이트">🖍️</button>`;
       if(acc==="resv"&&!mine){
-        return `<tr class="${hi?"ocs-hi":""}" style="${hi?"":"opacity:.35;"}font-size:10.5px;color:var(--sub);line-height:1.15"><td style="padding:1px 4px">${u.t||"?"}</td><td style="padding:1px 4px">${esc(u.pt)}</td><td style="padding:1px 4px">🔒 ${esc(u.cat||"—")}</td><td style="padding:1px 4px">${esc(u.dr||"")}</td><td style="padding:1px 2px;width:22px">${hiBtn}</td></tr>`;
+        return `<tr class="lockrow ${hi?"ocs-hi":""}" style="${hi?"":"opacity:.42;"}font-size:10.5px;color:var(--sub);line-height:1.15"><td style="padding:1px 4px">${u.t||"?"}</td><td style="padding:1px 4px">${esc(u.pt)}<span class="ptno">${esc(u.no||"")}</span></td><td style="padding:1px 4px">🔒 ${esc(u.cat||"—")}</td><td style="padding:1px 4px">${esc(u.dr||"")}</td><td style="padding:1px 2px;width:22px">${hiBtn}</td></tr>`;
       }
-      return `<tr class="${hi?"ocs-hi":""}" style="${!hi&&mine?"background:var(--purple-soft)":""}"><td>${u.t||"?"}</td><td><b>${esc(u.pt)}</b>${mine?" <b style=\'color:var(--purple)\'>◇</b>":""}</td><td>${esc(u.cat||"—")}</td><td style="color:var(--sub)">${esc(u.dr||"")}</td><td style="padding:1px 2px;width:22px">${hiBtn}</td></tr>`;};
+      return `<tr class="${hi?"ocs-hi":""}" style="${!hi&&mine?"background:var(--purple-soft)":""}"><td>${u.t||"?"}</td><td><b>${esc(u.pt)}</b><span class="ptno">${esc(u.no||"")}</span>${mine?" <b style=\'color:var(--purple)\'>◇</b>":""}</td><td>${esc(u.cat||"—")}</td><td style="color:var(--sub)">${esc(u.dr||"")}</td><td style="padding:1px 2px;width:22px">${hiBtn}</td></tr>`;};
     bd=`<div class="card"><h2>🗂 과별 진료 목록 <span class="badge">${ocsDeptFilter?`${ocsDeptFilter} ${shownCnt}건`:`전체 ${raw.length}건`}</span></h2>
-      <p class="hint">각 줄: <b>시간 · 환자 · 진료내역 · 담당쌤</b> · 과 이름 옆 숫자 = <b>교수님 제외(전공의 기준) 건수</b> · ⭐교정만 교수님 포함 전체 · 🔒흐린 줄=지정 교수님·원스톱·임플센터·달신(카운트 제외) · <span style="background:var(--purple-soft);padding:0 4px;border-radius:4px">보라 ◇</span>=내 토탈 환자</p>
+      <details class="ocs-legend"><summary>ℹ️ 보는 법</summary>
+      <p class="hint" style="margin-top:5px">각 줄: <b>시간 · 환자(번호) · 진료내역 · 담당쌤</b><br>
+      과 이름 옆 숫자 = <b>교수님 제외(전공의 기준) 건수</b> · ⭐교정만 교수님 포함 전체<br>
+      🔒흐린 줄 = 지정 교수님·원스톱·임플센터·달신 (카운트 제외)<br>
+      <span style="background:var(--purple-soft);padding:0 4px;border-radius:4px">보라 ◇</span> = 내 토탈 환자 · 🖍️ 탭 = 관심 진료 표시</p></details>
       <div class="ocs-chips">${chips}</div>
       <div class="ocs-view-opts"><button class="ocs-toggle${ocsHideLocked?" on":""}" onclick="ocsToggleLocked()">${ocsHideLocked?"🔒 교수님·회색 숨김 ON":"👁 교수님·회색 표시 중"}</button></div>
       ${shownDeps.map(dep=>{const L=GA[dep].sort((a,b)=>(a.t||"99")<(b.t||"99")?-1:1);
@@ -3446,8 +3676,10 @@ function renderOcsDay(){
         /* 교수님·회색 숨김이 켜지면 잠긴 행 제외(단 내 토탈 환자는 유지). 교정은 전체 유지 */
         const Lshown=(ocsHideLocked&&dep!=="교정")?L.filter(u=>accessOf(u)==="resi"||MSg.has(u)||(S.ocsHi&&S.ocsHi[ocsHiKey(u)])):L;
         if(!Lshown.length)return "";
-        return `<details open style="margin-top:6px"><summary style="font-size:12.5px;font-weight:800;cursor:pointer"><span class="dept-tag" style="background:${DEPT_COLOR[dep]||"#666"};color:${txtOn(DEPT_COLOR[dep]||"#666")}">${dep}</span> <b style="font-size:14.5px">${cnt}건</b>${dep==="교정"?` <span style="font-size:10px;color:var(--brand)">⭐교수포함</span>`:""} <span style="font-weight:600;color:var(--sub)">(오전 ${am} · 오후 ${pm})</span>${lockN&&dep!=="교정"?` <span style="color:var(--sub);font-size:10.5px">🔒${lockN}</span>`:""}${mineN?` · <b style="color:var(--purple)">◇${mineN}</b>`:""}</summary>
-        <table class="rtable otbl" style="font-size:11.5px">${Lshown.map(row).join("")}</table></details>`;}).join("")}
+        /* 과가 많으면 기본 접힘(스크롤 절약) — 내 토탈 환자가 있는 과·필터로 한 과만 볼 땐 자동 펼침 */
+        const autoOpen=(mineN>0)||shownDeps.length<=2;
+        return `<details id="obk-${dep}"${autoOpen?" open":""} style="margin-top:6px"><summary style="font-size:12.5px;font-weight:800;cursor:pointer"><span class="dept-tag" style="background:${DEPT_COLOR[dep]||"#666"};color:${txtOn(DEPT_COLOR[dep]||"#666")}">${dep}</span> <b style="font-size:14.5px">${cnt}건</b>${dep==="교정"?` <span style="font-size:10px;color:var(--brand)">⭐교수포함</span>`:""} <span style="font-weight:600;color:var(--sub)">(오전 ${am} · 오후 ${pm})</span>${lockN&&dep!=="교정"?` <span style="color:var(--sub);font-size:10.5px">🔒${lockN}</span>`:""}${mineN?` · <b style="color:var(--purple)">◇${mineN}</b>`:""}</summary>
+        <div style="max-height:340px;overflow-y:auto;-webkit-overflow-scrolling:touch"><table class="rtable otbl" style="font-size:11.5px">${Lshown.map(row).join("")}</table></div></details>`;}).join("")}
     </div>`;
   }else{
     bd=`<div class="card"><h2>이 날 OCS</h2><p class="hint">이 날짜 데이터가 없어요 — 위 <b>📥 OCS 붙여넣기</b>에 그날 OCS 행들을 넣어주세요.</p></div>`;
@@ -3559,7 +3791,15 @@ function mergeStates(a,b){
   out.routine={...(b&&b.routine||{}),...(out.routine||{})};
   out.roadmap={...(b&&b.roadmap||{}),...(out.roadmap||{})};
   out.protoDone={...(b&&b.protoDone||{}),...(out.protoDone||{})};
-  out.ocsHi={...(b&&b.ocsHi||{}),...(out.ocsHi||{})}; /* OCS 하이라이트: 합집합(어느 기기에서 켠 것도 유지) */
+  /* OCS 하이라이트: 기본은 합집합(어느 기기에서 켠 것도 유지).
+     단 한쪽이 더 최근에 "새 OCS 업로드로 초기화"했다면 그 쪽 상태를 그대로 따름 */
+  {
+    const aAt=Number((out&&out.ocsHiAt)||0), bAt=Number((b&&b.ocsHiAt)||0);
+    if(aAt&&aAt>bAt)      out.ocsHi={...(out.ocsHi||{})};
+    else if(bAt&&bAt>aAt) out.ocsHi={...(b.ocsHi||{})};
+    else                  out.ocsHi={...(b&&b.ocsHi||{}),...(out.ocsHi||{})};
+    out.ocsHiAt=Math.max(aAt,bAt)||undefined;
+  }
   out.baseDel=[...new Set([...(out.baseDel||[]),...((b&&b.baseDel)||[])])];
   out.baseV=Math.max(out.baseV||0,(b&&b.baseV)||0);
   /* ★묘비 합집합 → 어느 기기에서든 지운 항목은 병합 후에도 부활하지 않음 */
@@ -3569,6 +3809,7 @@ function mergeStates(a,b){
   out.events=(out.events||[]).filter(e=>!dead.has(String(e.id))&&!(e.bid!=null&&deadB.has(String(e.bid))));
   out.totals=(out.totals||[]).filter(t=>!deadT.has(String(t.id)));
   out.semester=out.semester||(b&&b.semester)||"3-2";
+  out.me=(out.me&&String(out.me).trim())||(b&&b.me)||"";   /* 노티용 내 번호·이름 */
   if(b&&b.archive)out.archive={...(b.archive),...(out.archive||{})};
   /* ocs(런타임 OCS): 날짜 합집합 — 같은 날짜는 행 많은 쪽 · arch는 키 합집합 */
   {const A=out.ocs||{days:{},arch:[]},B=(b&&b.ocs)||{days:{},arch:[]};
@@ -3703,8 +3944,8 @@ function histObjs(){return ocsStore().arch;}
    예) 2026/07/18 09:00 00676704 채성준 치과교정과 손승현 6M r/c N N M 24년 3개월
    과+의사가 붙는 형태(치주과한만진 · 치과보철과안유진#36i · 구강악안면외과[외과]일반)도 분해 */
 const OCS_DEPTS=[["구강악안면외과","외과"],["영상치의학과","영상"],["구강병리과","병리"],["치과보존과","보존"],["치과보철과","보철"],["치과교정과","교정"],["소아치과","소치"],["구강내과","내과"],["치주과","치주"],["원스톱협진센터","기타"],["임플란트진료센터","기타"],["원스톱","기타"],["임플센터","기타"],["원내생진료실","원진실"],["원진실","원진실"]];
-const OCS_TAIL=/\s*[NYC]\s*[NY]\s*[MF]\s*\d{0,3}\s*년?\s*\d{0,2}\s*개?\s*월?\s*$/;
-const OCS_LINE=/^(\d{4})[.\/-](\d{1,2})[.\/-](\d{1,2})\s+(\d{1,2}:\d{2})\s+(\d{5,9})\s*([가-힣]{2,8})\s+(\S+)(?:\s+([\s\S]*))?$/;
+const OCS_TAIL=/\s*[A-Z]\s*[NY]\s*[MF]\s*\d{0,3}\s*년?\s*\d{0,2}\s*개?\s*월?\s*$/;
+const OCS_LINE=/^(\d{4})[.\/-](\d{1,2})[.\/-](\d{1,2})\s+(\d{1,2}:\d{2})\s+(\d{5,9})\s*((?:[가-힣]{2,12}|[A-Za-z]+(?:\s+[A-Za-z]+){0,2}))\s+(\S+)(?:\s+([\s\S]*))?$/;
 const OCS_NOT_DR=/^(신환|초진|당일|촬영|예약|보류|취소|수납|상담|검진|판독|의뢰|대기|전화|응급|가예약)/;
 function parseOcsText(txt){
   const rows=[],bad=[];const seen=new Set();
@@ -3721,9 +3962,27 @@ function parseOcsText(txt){
     for(const[full,shortN] of OCS_DEPTS){if(depTok.startsWith(full)){dep=shortN;drFrag=depTok.slice(full.length);break;}}
     if(!dep){bad.push(ln.slice(0,50));return;}
     let dr=drFrag;
+    /* 과에 붙은 [외과]일반 형태에서 뒤에 진료내역이 딸려온 경우 분리 */
+    if(dr&&/^\[/.test(dr)){
+      const bm=dr.match(/^(\[[^\]]+\](?:일반|지정)?)/);
+      if(bm&&bm[1].length<dr.length){rest=(dr.slice(bm[1].length)+" "+rest).trim();dr=bm[1];}
+    }
+    /* 성별·나이 꼬리를 먼저 떼어낸 뒤 의사명을 뽑아야 '권익재CNF'처럼 꼬리가 붙은 경우도 정확 */
+    rest=rest.replace(OCS_TAIL,"").trim();
     if(!dr&&rest){
       const first=rest.split(" ")[0]||"";
-      if((/^[가-힣]{2,4}$/.test(first)&&!OCS_NOT_DR.test(first))||/^\[.+\]/.test(first)){dr=first;rest=rest.slice(first.length).trim();}
+      if(/^\[.+\]/.test(first)){
+        /* [외과]일반, [내과]일반 형태 — 뒤에 붙은 진료내역(예: '[외과]일반CT후')은 분리 */
+        const bm=first.match(/^(\[[^\]]+\](?:일반|지정)?)/);
+        const lab=bm?bm[1]:first;
+        dr=lab;rest=rest.slice(lab.length).trim();
+      }
+      else if(!OCS_NOT_DR.test(first)){
+        /* 한글 2~4자 + (동명이인 구분 대문자 1자 | 치식 #12 / #36i) 까지 의사명으로 인정.
+           'CT'·'CNM' 같은 2자 이상 영문은 진료내역/꼬리이므로 이름에 포함하지 않음 */
+        const dm=first.match(/^([가-힣]{2,4}(?:[A-Z](?![A-Za-z])|#\d{1,2}[a-z]?)?)/);
+        if(dm){dr=dm[1];rest=rest.slice(dm[1].length).trim();}
+      }
     }
     let cat=rest.replace(OCS_TAIL,"").trim();
     const k=d+"|"+t+"|"+no+"|"+dep;
@@ -3744,6 +4003,14 @@ function ocsIngest(rows,bad,srcLabel){
     rs.forEach(r=>{const k=r.d+"|"+r.t+"|"+r.no+"|"+r.dep;if(have.has(k))return;have.add(k);cur.push(r);added++;});
     o.days[d]=cur.sort((a,b)=>(a.t||"")<(b.t||"")?-1:1);
   });
+  /* 🖍️ 새 OCS를 넣으면 하이라이트는 초기화 — 그날그날 새로 표시하는 용도.
+     (업로드 전까지는 그대로 유지되고, 새로 들어온 행이 하나도 없으면 지우지 않음) */
+  let hiCleared=0;
+  if(added>0){
+    hiCleared=Object.keys(S.ocsHi||{}).length;
+    S.ocsHi={};
+    S.ocsHiAt=Date.now();   /* 이 시각 이전의 하이라이트는 병합 때 되살리지 않음 */
+  }
   ocsRollover();rebuildOcs();
   save(1);
   const dates=Object.keys(byDate).sort();
@@ -3757,8 +4024,18 @@ function ocsIngest(rows,bad,srcLabel){
   }
   const icon=srcLabel==="file"?"📁":"📥";
   toast(`${icon} OCS ${rows.length}행 인식 · 신규 ${added}건 (${dates.map(fmtD).join(", ")})${bad&&bad.length?` · 미인식 ${bad.length}줄`:""}`);
+  if(hiCleared)setTimeout(()=>toast(`🖍️ 새 OCS라 하이라이트 ${hiCleared}건을 비웠어요`),1000);
+  /* ◇ 내 토탈 환자가 이번 OCS에 있으면 알림 + 토탈 탭으로 안내 (노티창이 상단에 자동 표시됨) */
+  try{
+    const M=totalMatches();
+    if(M.length){
+      const nm=M.map(x=>x.t.pt).slice(0,3).join(", ")+(M.length>3?` 외 ${M.length-3}명`:"");
+      setTimeout(()=>toast(`◇ 내 토탈 환자 ${M.length}명 내원 예정! (${nm}) — 토탈 탭에서 노티 확인`),1800);
+    }
+  }catch(e){}
   let n=0;try{n=refreshAllLogs(true);}catch(e){}
   renderTotalFound();renderTotals();renderOcsDay();
+  try{if(typeof renderOcsHl==="function")renderOcsHl();}catch(e){}
   if(document.getElementById("mcal")){renderCalendar();renderDayDetail();}
   if(n)setTimeout(()=>toast(`📋 토탈 이력 ${n}건 자동 추가!`),1400);
   return added;
@@ -3770,6 +4047,113 @@ function ocsPasteRun(){
   if(rows.length)ta.value="";
 }
 /* OCS 엑셀(.xlsx) 파일 → SheetJS로 셀 읽기 → 공백 join → 기존 파서로 파싱 */
+/* ═══ 🔐 암호 걸린 OCS 엑셀 열기 (ECMA-376 Agile / Standard) ═══
+   브라우저 내장 Web Crypto만 사용 — 외부 라이브러리·서버 전송 없음. 암호는 저장하지 않음. */
+function xdIsOle(u8){return u8&&u8.length>8&&u8[0]===0xD0&&u8[1]===0xCF&&u8[2]===0x11&&u8[3]===0xE0;}
+function xdCat(){const a=[].slice.call(arguments);let n=0;for(const x of a)n+=x.length;
+  const o=new Uint8Array(n);let p=0;for(const x of a){o.set(x,p);p+=x.length;}return o;}
+function xdLE32(n){const b=new Uint8Array(4);new DataView(b.buffer).setUint32(0,n,true);return b;}
+function xdB64(s){const t=atob(s);const o=new Uint8Array(t.length);for(let i=0;i<t.length;i++)o[i]=t.charCodeAt(i);return o;}
+function xdTag(x,t){let i=x.indexOf("<"+t+" ");
+  if(i<0){const j=x.indexOf(":"+t+" ");if(j<0)return "";i=x.lastIndexOf("<",j);}
+  return x.slice(i,x.indexOf(">",i));}
+function xdAttr(x,t,a){const seg=xdTag(x,t);const m=seg.match(new RegExp(a+'="([^"]*)"'));return m?m[1]:null;}
+function xdHashName(s){const m={SHA512:"SHA-512",SHA384:"SHA-384",SHA256:"SHA-256",SHA1:"SHA-1"};
+  return m[String(s||"").toUpperCase().replace(/[^A-Z0-9]/g,"")]||"SHA-512";}
+async function xdDigest(alg,d){return new Uint8Array(await crypto.subtle.digest(alg,d));}
+/* AES-CBC 패딩 없이 복호화 — WebCrypto는 항상 PKCS#7을 기대하므로 더미 블록을 붙여 우회 */
+async function xdCbcNoPad(rawKey,iv,data){
+  const k=await crypto.subtle.importKey("raw",rawKey,{name:"AES-CBC"},false,["encrypt","decrypt"]);
+  const last=data.slice(data.length-16);
+  const enc=new Uint8Array(await crypto.subtle.encrypt({name:"AES-CBC",iv:last},k,new Uint8Array(16).fill(16))).slice(0,16);
+  return new Uint8Array(await crypto.subtle.decrypt({name:"AES-CBC",iv},k,xdCat(data,enc)));
+}
+function xdPwBytes(pwd){const pw=new Uint8Array(pwd.length*2);
+  for(let i=0;i<pwd.length;i++){const c=pwd.charCodeAt(i);pw[i*2]=c&255;pw[i*2+1]=c>>8;}return pw;}
+
+/* 암호 걸린 xlsx(u8)를 풀어 평문 xlsx 바이트 반환. 암호 틀리면 예외. */
+async function xdDecrypt(u8,pwd,onProg){
+  if(!(window.crypto&&crypto.subtle))throw new Error("이 브라우저에서는 암호 해제를 지원하지 않아요 (보안 연결 필요)");
+  if(typeof XLSX==="undefined"||!XLSX.CFB)throw new Error("엑셀 모듈이 준비되지 않았어요");
+  const cfb=XLSX.CFB.read(u8,{type:"array"});
+  const g=n=>{try{const f=XLSX.CFB.find(cfb,n);return f&&f.content?new Uint8Array(f.content):null;}catch(e){return null;}};
+  const info=g("EncryptionInfo")||g("/EncryptionInfo");
+  const pkg=g("EncryptedPackage")||g("/EncryptedPackage");
+  if(!info||!pkg)throw new Error("암호 형식을 알 수 없어요 — 엑셀에서 암호를 푼 뒤 저장해 올려주세요");
+  const dv=new DataView(info.buffer,info.byteOffset);
+  const major=dv.getUint16(0,true),minor=dv.getUint16(2,true);
+  if(!(major===4&&minor===4))
+    throw new Error("이 파일은 옛 방식(Office 2007 이전)으로 잠겨 있어요 — 엑셀에서 암호를 푼 뒤 저장해 올려주세요");
+  let xml="";
+  try{xml=new TextDecoder("utf-8").decode(info.slice(8));}catch(e){xml=String.fromCharCode.apply(null,info.slice(8));}
+  const ekHash=xdHashName(xdAttr(xml,"encryptedKey","hashAlgorithm"));
+  const ekSalt=xdB64(xdAttr(xml,"encryptedKey","saltValue"));
+  const spin=+xdAttr(xml,"encryptedKey","spinCount")||100000;
+  const ekKB=(+xdAttr(xml,"encryptedKey","keyBits")||256)/8;
+  const vhi=xdB64(xdAttr(xml,"encryptedKey","encryptedVerifierHashInput"));
+  const vhv=xdB64(xdAttr(xml,"encryptedKey","encryptedVerifierHashValue"));
+  const ekv=xdB64(xdAttr(xml,"encryptedKey","encryptedKeyValue"));
+  const kdHash=xdHashName(xdAttr(xml,"keyData","hashAlgorithm"));
+  const kdSalt=xdB64(xdAttr(xml,"keyData","saltValue"));
+  const kdBlock=+xdAttr(xml,"keyData","blockSize")||16;
+  const kdKB=(+xdAttr(xml,"keyData","keyBits")||256)/8;
+  if(String(xdAttr(xml,"keyData","cipherAlgorithm")||"AES").toUpperCase().indexOf("AES")<0)
+    throw new Error("지원하지 않는 암호 방식이에요 — 엑셀에서 암호를 푼 뒤 저장해 올려주세요");
+  /* 반복 해시(spinCount)는 3개 블록키가 공유 → 1회만 계산 */
+  let h=await xdDigest(ekHash,xdCat(ekSalt,xdPwBytes(pwd)));
+  const step=Math.max(1,Math.floor(spin/20));
+  for(let i=0;i<spin;i++){
+    h=await xdDigest(ekHash,xdCat(xdLE32(i),h));
+    if(onProg&&i%step===0){onProg(Math.round(i/spin*100));await new Promise(r=>setTimeout(r,0));}
+  }
+  const base=h;
+  const mk=async bk=>{const x=await xdDigest(ekHash,xdCat(base,bk));
+    const o=new Uint8Array(ekKB).fill(0x36);o.set(x.slice(0,Math.min(ekKB,x.length)));return o;};
+  const k1=await mk(new Uint8Array([0xfe,0xa7,0xd2,0x76,0x3b,0x4b,0x9e,0x79]));
+  const k2=await mk(new Uint8Array([0xd7,0xaa,0x0f,0x6d,0x30,0x61,0x34,0x4e]));
+  const k3=await mk(new Uint8Array([0x14,0x6e,0x0b,0xe7,0xab,0xac,0xd0,0xd6]));
+  /* 암호 검증 */
+  const a=await xdCbcNoPad(k1,ekSalt,vhi), b=await xdCbcNoPad(k2,ekSalt,vhv);
+  const exp=await xdDigest(ekHash,a.slice(0,ekSalt.length));
+  let same=true;for(let i=0;i<Math.min(20,exp.length,b.length);i++)if(exp[i]!==b[i]){same=false;break;}
+  if(!same){const e=new Error("암호가 맞지 않아요");e.badPassword=true;throw e;}
+  if(onProg)onProg(100);
+  /* 본문 복호화 */
+  const secret=(await xdCbcNoPad(k3,ekSalt,ekv)).slice(0,kdKB);
+  const total=new DataView(pkg.buffer,pkg.byteOffset).getUint32(0,true);
+  const body=pkg.slice(8);const out=new Uint8Array(body.length);
+  for(let i=0,off=0;off<body.length;i++,off+=4096){
+    const chunk=body.slice(off,Math.min(off+4096,body.length));
+    const iv=(await xdDigest(kdHash,xdCat(kdSalt,xdLE32(i)))).slice(0,kdBlock);
+    out.set((await xdCbcNoPad(secret,iv,chunk)).slice(0,chunk.length),off);
+  }
+  const plain=out.slice(0,total>0&&total<=out.length?total:out.length);
+  if(!(plain[0]===0x50&&plain[1]===0x4B))throw new Error("암호는 풀렸는데 엑셀 내용을 읽지 못했어요");
+  return plain;
+}
+/* 암호 입력 받기 — 4자리든 몇 자리든 OK. 암호는 어디에도 저장하지 않음 */
+function xdAskPassword(cb,msg){
+  const dlg=document.getElementById("pw-dlg");
+  const inp=document.getElementById("pw-in");
+  const hint=document.getElementById("pw-hint");
+  if(!dlg||!inp){const v=prompt(msg||"엑셀 암호를 입력해주세요");if(v)cb(v);return;}
+  hint.textContent=msg||"OCS에서 받은 암호를 입력해주세요 (보통 4자리)";
+  hint.style.color="";
+  inp.value="";window.__pwCb=cb;
+  try{dlg.showModal();}catch(e){dlg.setAttribute("open","");}
+  setTimeout(()=>{try{inp.focus();}catch(e){}},80);
+}
+function xdPwOk(){
+  const inp=document.getElementById("pw-in");const v=(inp&&inp.value||"").trim();
+  if(!v){const h=document.getElementById("pw-hint");if(h){h.textContent="암호를 입력해주세요";h.style.color="var(--red)";}return;}
+  const dlg=document.getElementById("pw-dlg");try{dlg.close();}catch(e){dlg.removeAttribute("open");}
+  const cb=window.__pwCb;window.__pwCb=null;if(cb)cb(v);
+}
+function xdPwCancel(){
+  const dlg=document.getElementById("pw-dlg");try{dlg.close();}catch(e){dlg.removeAttribute("open");}
+  window.__pwCb=null;
+  const st=document.getElementById("ocs-file-status");if(st)st.innerHTML="취소했어요 — 파일을 다시 골라주세요";
+}
 function ocsFileRun(inputEl){
   const file=inputEl&&inputEl.files&&inputEl.files[0];
   if(!file){return;}
@@ -3779,8 +4163,34 @@ function ocsFileRun(inputEl){
   const rd=new FileReader();
   rd.onerror=()=>{if(st)st.innerHTML='<div class="warn-line">⚠ 파일을 읽지 못했어요. 다시 시도해주세요.</div>';};
   rd.onload=e=>{
+    const raw=new Uint8Array(e.target.result);
+    /* 🔐 암호 걸린 파일이면 암호를 받아 풀고 나서 진행 */
+    if(xdIsOle(raw)){
+      const tryPw=(msg)=>xdAskPassword(async pwd=>{
+        if(st)st.innerHTML='<div class="ocs-note">🔐 암호 확인 중… <b id="pw-prog">0%</b> <span class="hint">(폰에서는 몇 초 걸려요)</span></div>';
+        try{
+          const plain=await xdDecrypt(raw,pwd,pc=>{const el=document.getElementById("pw-prog");if(el)el.textContent=pc+"%";});
+          ocsFileFinish(plain,file,st,inputEl);
+        }catch(err){
+          if(err&&err.badPassword){
+            if(st)st.innerHTML='<div class="warn-line">⚠ 암호가 맞지 않아요 — 다시 입력해주세요</div>';
+            tryPw("암호가 맞지 않아요 — 다시 입력해주세요");
+          }else{
+            if(st)st.innerHTML='<div class="warn-line">⚠ '+esc(String(err&&err.message||err).slice(0,80))+'</div>';
+            inputEl.value="";
+          }
+        }
+      },msg);
+      tryPw();
+      return;
+    }
+    ocsFileFinish(raw,file,st,inputEl);
+  };
+  rd.readAsArrayBuffer(file);
+}
+/* 평문 엑셀 바이트를 실제로 해석해 반영 (암호 있든 없든 여기로 모임) */
+function ocsFileFinish(data,file,st,inputEl){
     try{
-      const data=new Uint8Array(e.target.result);
       const wb=XLSX.read(data,{type:"array"});
       let allLines=[];
       wb.SheetNames.forEach(nm=>{
@@ -3795,11 +4205,9 @@ function ocsFileRun(inputEl){
         else st.innerHTML='<div class="warn-line">⚠ 이 엑셀에서 OCS 예약 행을 찾지 못했어요. OCS 예약 목록을 저장한 파일이 맞는지 확인해주세요.</div>';
       }
     }catch(err){
-      if(st)st.innerHTML='<div class="warn-line">⚠ 엑셀 분석 실패: '+(err&&err.message?String(err.message).slice(0,60):'알 수 없는 오류')+'. 암호가 걸린 파일이면 암호를 풀어서 저장한 뒤 올려주세요.</div>';
+      if(st)st.innerHTML='<div class="warn-line">⚠ 엑셀 분석 실패: '+esc(String(err&&err.message||"알 수 없는 오류").slice(0,70))+'</div>';
     }
-    inputEl.value="";
-  };
-  rd.readAsArrayBuffer(file);
+    if(inputEl)inputEl.value="";
 }
 function ocsDelDay(d){
   askConfirm(`${fmtD(d)} OCS 데이터(${(ocsStore().days[d]||[]).length}건)를 삭제할까요?`,()=>{
@@ -3843,10 +4251,107 @@ function renderTotalFound(){
   const M=totalMatches();
   if(badge)badge.textContent=M.length?`OCS에서 ${M.length}명 발견`:(UPCOMING.length?`예약 ${UPCOMING.length}건 스캔 — 매칭 0`:"OCS 붙여넣기 대기");
   if(!M.length){box.innerHTML="";return;}
-  box.innerHTML=`<div class="card" style="border:1.5px solid var(--purple);background:var(--purple-soft)">
-    <h2 style="color:var(--purple)">◇ OCS에서 토탈 환자 발견!</h2>
-    ${M.map(({t,ms})=>`<div style="margin-top:6px;font-size:12.5px"><b>[${t.dept}] ${esc(t.pt)}${t.ptno?" #"+t.ptno:""}</b> — ${ms.map(u=>`${fmtD(u.d)} ${u.t||""}${t.scope==="all"&&u.dep&&u.dep!==t.dept?` <span class="dept-tag" style="background:${DEPT_COLOR[u.dep]||"#666"};color:${txtOn(DEPT_COLOR[u.dep]||"#666")};font-size:9px">${u.dep}</span>`:""}${t.next!==u.d?` <button class="btn small" style="background:var(--purple);color:#fff;padding:2px 8px;font-size:10.5px" onclick="setNextFromUp(${t.id},'${u.d}','${u.t||""}','${(u.dr||"").replace(/'/g,"")}','${u.no||""}')">반영</button>`:" ✓"}`).join(" · ")}</div>`).join("")}
-    <p class="hint" style="margin-top:6px">반영하면 전날 18시 노티·당일 준비가 오늘/플랜/루틴에 자동으로 잡혀요.</p>
+  box.innerHTML=notiCardHtml(M)+`<div class="found-card">
+    <div class="found-hd"><span class="found-ic">◇</span><b>OCS에서 토탈 환자 ${M.length}명 발견</b></div>
+    ${M.map(({t,ms})=>`<div class="found-row">
+      <div class="found-pt"><span class="dept-tag" style="background:${DEPT_COLOR[t.dept]||"#666"};color:${txtOn(DEPT_COLOR[t.dept]||"#666")}">${t.dept}</span>
+        <b>${esc(t.pt)}</b>${t.ptno?`<span class="ptno-in">${esc(t.ptno)}</span>`:""}</div>
+      ${ms.map(u=>`<div class="found-when">
+        <span class="fw-d">${fmtD(u.d)}</span><span class="fw-t">${u.t||""}</span>
+        ${t.scope==="all"&&u.dep&&u.dep!==t.dept?`<span class="dept-tag" style="background:${DEPT_COLOR[u.dep]||"#666"};color:${txtOn(DEPT_COLOR[u.dep]||"#666")};font-size:9px">${u.dep}</span>`:""}
+        ${u.dr?`<span class="fw-dr">${esc(u.dr)}</span>`:""}
+        ${u.cat?`<span class="fw-cat">${esc(u.cat)}</span>`:""}
+        ${t.next!==u.d?`<button class="fw-btn" onclick="setNextFromUp(${t.id},'${u.d}','${u.t||""}','${(u.dr||"").replace(/'/g,"")}','${u.no||""}')">반영</button>`:`<span class="fw-ok">✓ 반영됨</span>`}
+      </div>`).join("")}
+    </div>`).join("")}
+    <p class="hint" style="margin-top:7px">반영하면 다음 내원일이 잡히고, 전날 노티·당일 준비가 자동으로 연결돼요.</p>
+  </div>`;
+}
+/* ═══ 📣 토탈 노티 자동 작성 — 발견된 내원 정보로 양식을 채워 바로 복사 ═══ */
+function saveNotiMe(v){
+  S.me=String(v||"").trim();
+  save(true);
+  try{renderTotalFound();}catch(e){}
+  if(S.me)toast("내 정보 저장됨 — 노티에 자동으로 들어가요");
+}
+function notiFmt(dep){
+  /* 과별 노티 양식 — 필드 구성이 과마다 다름 */
+  if(dep==="교정")return {date:true,time:true,item:false};   /* 담당의,날짜,시간,환자,번호,내정보 */
+  if(dep==="소치")return {date:false,time:true,item:false};  /* 담당의,시간,환자,번호,내정보 */
+  return {date:true,time:true,item:true};                    /* 보철 등: 담당의,날짜,시간,항목,환자,번호,내정보 */
+}
+function notiNo(v){ /* 환자번호는 앞 0을 떼고 보냄 (01064529 → 1064529) */
+  return String(v||"").replace(/\D/g,"").replace(/^0+/,"")||String(v||"");
+}
+function notiDate(d){ return String(d||"").slice(5).replace("-",""); }   /* 2026-09-03 → 0903 */
+function notiTime(t){ return String(t||"").replace(":",""); }            /* 14:00 → 1400 */
+function notiLineFor(t,u){
+  const f=notiFmt(t.dept);
+  const me=(S.me&&S.me.trim())?S.me.trim():"번호,이름";
+  const out=[ (u.dr||t.dr||"담당의") ];
+  if(f.date)out.push(notiDate(u.d));
+  if(f.time)out.push(notiTime(u.t));
+  if(f.item)out.push(t.item||"항목");
+  out.push(t.pt, notiNo(t.ptno||u.no), me);
+  return out.join(",");
+}
+function notiFmtLabel(dep){
+  const f=notiFmt(dep);
+  return ["담당의",f.date?"날짜":null,f.time?"시간":null,f.item?"항목":null,"환자이름","환자번호","번호,이름"].filter(Boolean).join(",");
+}
+/* 한 줄 복사 */
+function notiCopyOne(i){
+  const el=document.getElementById("noti-l"+i);if(!el)return;
+  const tx=el.getAttribute("data-tx")||el.textContent;
+  navigator.clipboard?.writeText(tx).then(()=>toast("복사됨 — 토탈방에 붙여넣기")).catch(()=>toast("복사 실패"));
+}
+/* 전체 복사 */
+function notiCopyAll(){
+  const tx=(window.__notiAll||"").trim();
+  if(!tx){toast("복사할 노티가 없어요");return;}
+  navigator.clipboard?.writeText(tx).then(()=>toast(`전체 ${tx.split("\n").length}건 복사됨`)).catch(()=>toast("복사 실패"));
+}
+function notiCardHtml(M){
+  /* 노티 대상 = 오늘 내원 + 다음 내원(내일 등 앞으로) — 지난 건 제외 */
+  const today=ymd(new Date());
+  const rows=[];const seen=new Set();
+  M.forEach(({t,ms})=>(ms||[]).forEach(u=>{
+    if(!u.d||u.d<today)return;
+    const k=t.id+"|"+u.d+"|"+(u.t||"");
+    if(seen.has(k))return;seen.add(k);
+    rows.push({t,u});
+  }));
+  if(!rows.length)return "";
+  rows.sort((a,b)=>((a.u.d+(a.u.t||""))<(b.u.d+(b.u.t||"")))?-1:1);
+  const todayN=rows.filter(r=>r.u.d===today).length;
+  const laterN=rows.length-todayN;
+  const badge=[todayN?`오늘 내원 · ${todayN}건`:null,laterN?`예정 ${laterN}건`:null].filter(Boolean).join(" · ");
+  const lines=rows.map(({t,u})=>notiLineFor(t,u));
+  window.__notiAll=lines.join("\n");
+  const fmts=[...new Set(rows.map(r=>r.t.dept))];
+  return `<div class="noti-card">
+    <div class="noti-top"><span class="noti-ic">📣</span><b class="noti-tt">토탈 노티</b><span class="noti-badge">${esc(badge)}</span></div>
+    <p class="noti-desc">그대로 복사해 보내면 돼요 · 과별 형식 자동</p>
+    <div class="noti-lines">
+      ${rows.map(({t,u},i)=>{
+        const col=DEPT_COLOR[t.dept]||"#666";
+        const tx=lines[i];
+        const isT=u.d===today;
+        return `<div class="noti-line${isT?" nl-today":""}">
+          <span class="dept-tag nl-dep" style="background:${col};color:${txtOn(col)}">${esc(t.dept)}</span>
+          <code id="noti-l${i}" class="nl-tx" data-tx="${esc(tx)}">${esc(tx)}</code>
+          <button class="nl-cp" onclick="notiCopyOne(${i})" title="이 줄 복사">📋</button>
+        </div>`;}).join("")}
+    </div>
+    <button class="noti-all" onclick="notiCopyAll()">📋 전체 복사</button>
+    <div class="noti-me">
+      <span>내 정보</span>
+      <input id="noti-me" value="${esc((S.me||"").trim())}" placeholder="예: 44,송주미" onchange="saveNotiMe(this.value)" onblur="saveNotiMe(this.value)">
+    </div>
+    <p class="hint noti-hint">${fmts.map(dp=>`<b>${esc(dp)}</b> ${esc(notiFmtLabel(dp))}`).join("<br>")}<br>
+      내 정보를 한 번 넣어두면 계속 자동으로 채워져요 · 전날 18:00~당일 08:00 토탈방 · 2명이면 각자!</p>
+    <div class="copybox noti-box2" onclick="copyTx(this)"><code>@케이스장, ${notiTime(rows[0].u.t)||"내원시간"}, ${esc(notiNo(rows[0].t.ptno||rows[0].u.no))}, ${esc(rows[0].t.pt)}, 들어가는 원내생</code><button class="btn small ghost">복사</button></div>
+    <p class="hint noti-hint">↑ 친환 노티 — 당일 <b>08:30까지</b> 과별 질문/잡담방</p>
   </div>`;
 }
 function ghostChip(u){
@@ -3860,7 +4365,7 @@ function setNextFromUp(id,d,tm,dr,no){const t=findT(id);if(!t)return;
     /* OCS에서 찾은 담당쌤·환자번호를 토탈에 자동 반영 → 제목 "시간 쌤 항목", 메모 "번호 이름" */
     if(dr&&String(dr).trim())t.dr=String(dr).trim();
     if(no&&!t.ptno)t.ptno=String(no).trim();
-    save();syncTotals();tick&&(lastMin=null);
+    save(true);syncTotals();tick&&(lastMin=null);
     toast(`${esc(t.pt)} 다음 내원 ${fmtD(d)}${t.nextT?" "+t.nextT:""} 반영`);
   });}
 function normNoG(s){return String(s||"").replace(/\D/g,"").replace(/^0+/,"");}
@@ -3899,14 +4404,14 @@ function toggleSeen(tid,idx,val){
   e.seen=newVal;
   if(newVal==="o"&&!t.visits.includes(e.d)){  /* ✅봤음 → visit 자동 기록 (유폴 D-7 연동) */
     t.visits.push(e.d);t.visits=t.visits.filter(Boolean).sort();
-    if(t.next===e.d){t.next="";t.nextT="";t.nextU=Date.now();}
-    if(t.visits.length>=t.need){t.next="";t.nextT="";t.nextU=Date.now();}
+    if(t.next===e.d){t.next="";t.nextT="";t.nextHidden=false;t.nextU=Date.now();}
+    if(t.visits.length>=t.need){t.next="";t.nextT="";t.nextHidden=false;t.nextU=Date.now();}
     toast(`✅ ${fmtD(e.d)} visit에 기록됨 (${t.visits.length}/${t.need})`);
   }else if(hadO&&newVal!=="o"&&t.visits.includes(e.d)){
     t.visits=t.visits.filter(v=>v!==e.d);
     toast(`↩ ${fmtD(e.d)} visit에서 제거됨`);
   }
-  save();syncTotals();
+  save(true);syncTotals();   /* 체크 즉시 저장 — 실습 중 바로 닫아도 유실 없게 */
 }
 function rescanTotals(scope){
   /* scope 없음=오늘~미래 예약 · scope="all"=쌓인 OCS 전체 이력까지 스캔 */
